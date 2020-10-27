@@ -23,7 +23,7 @@
 	
 	.list_box > .list_item_link {
 		display: flex;
-		width: 825px;
+		width: auto;
 		height: 200px;
 		position: static;
 		border-bottom: 1px solid rgb(238, 238, 238);
@@ -212,6 +212,7 @@
 		background-color: #ffffff;
 		padding: 0;
 		height: 145px;
+		margin-bottom: 10px;
 	}
 	
 	.tab_btn_box_stay_list {

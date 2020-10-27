@@ -75,7 +75,7 @@
 	<form action="search" method="get">
 		<div class="container">
 			<div class="row justify-content-left">
-				<div class="col-lg-6 d-none d-md-block">
+				<div class="col-lg-6 d-md-block"> <!-- d-none -->
 					<div class="section_title text-left mb_70">
 						<a href="javascript:void(0);" class="searchTag sp_active">숙소</a>
 						<a href="javascript:void(0);" class="searchTag">관광</a>
@@ -83,13 +83,13 @@
 					</div>
 				</div>
 				<!-- 모바일 -->
-				<div class="col-lg-6 d-lg-none">
+				<!-- <div class="col-lg-6 d-lg-none">
 					<div class="section_title text-left mb_70">
 						<a href="javascript:void(0);" class="searchTag_m sp_active">숙소</a>
 						<a href="javascript:void(0);" class="searchTag_m">관광</a>
 						<a href="javascript:void(0);" class="searchTag_m">지역</a>
 					</div>
-				</div>
+				</div> -->
 			</div>
 			<div class="row justify-content-center align-items-center">
 				<div class="col-lg-12">

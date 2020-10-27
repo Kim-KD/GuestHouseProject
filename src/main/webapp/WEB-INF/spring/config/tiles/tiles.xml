@@ -14,8 +14,8 @@
     <!--  user base layout [e]  -->
     
     <!--  user body content [s]  -->
-    <definition name="user/*" extends="user_layout">
-        <put-attribute name="body" value="/WEB-INF/views/body/user/{1}.jsp" />
+    <definition name="user/*/*" extends="user_layout">
+        <put-attribute name="body" value="/WEB-INF/views/body/user/{1}/{2}.jsp" />
     </definition>
     <!--  user body content [e]  -->
 	
@@ -30,8 +30,8 @@
     <!--  base layout [e]  -->
 
     <!--  body content [s]  -->
-    <definition name="*/*" extends="layout">
-        <put-attribute name="body" value="/WEB-INF/views/body/{1}/{2}.jsp" />
+    <definition name="*/*/*" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/views/body/{1}/{2}/{3}.jsp" />
     </definition>
     <!--  body content [e]  -->
 

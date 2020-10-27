@@ -22,25 +22,25 @@ public class UserMvcController {
 	// 로그인 page
 	@GetMapping("/login_page")
 	public String login_page() {
-		return "user/login";
+		return "user/login/login";
 	}
 	
 	// 회원가입 선택 page
 	@GetMapping("/choice_sign_up")
 	public String choice_sign_up() {
-		return "user/choice_sign_up";
+		return "user/signup/choice_sign_up";
 	}
 	
 	// 일반 회원가입 page
 	@GetMapping("/user_sign_up_page") 
 	public String user_sign_up_page() {
-		return "user/user_sign_up";
+		return "user/signup/user_sign_up";
 	}
 	
 	// 기업 회원가입 page
 	@GetMapping("/cpn_sign_up_page")
 	public String cpn_sign_up_page() {
-		return "user/cpn_sign_up";
+		return "user/signup/cpn_sign_up";
 	}
 	
 	// 회원가입

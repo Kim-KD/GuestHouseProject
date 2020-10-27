@@ -287,7 +287,7 @@
     				</tbody>
     			</table>
     			
-    			<div class="text-center m-t-25">
+    			<div class="text-center m-t-40">
 					<button class="btn bg_blu btn-lg">회원가입</button>
 					<button class="btn bg_dark_grey btn-lg ml5">취소</button>
 				</div>

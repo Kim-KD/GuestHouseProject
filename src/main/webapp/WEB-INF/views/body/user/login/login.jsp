@@ -3,7 +3,7 @@
 
 <div class="limiter">
 	<div class="container-login100">
-		<div class="wrap-login100 p-t-50 p-b-90">
+		<div class="wrap-login100 p-t-50 p-b-90 p-l-45 p-r-45">
 			<form class="login100-form validate-form flex-sb flex-w" action="login" method="post">
 				<a href="index" class="login100-form-title p-b-1"><img src="resources/assets/main/img/import/img/logo.png"></a>
 				<span class="login100-form-minititle p-b-21"></span>
