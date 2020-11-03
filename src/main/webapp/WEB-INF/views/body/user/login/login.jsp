@@ -1,46 +1,75 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<script src="resources/data-components/user/login.js"></script>
+<!-- <script src="resources/data-components/user/login.js"></script> -->
 
-<div class="limiter">
-	<div class="container-login100">
-		<div class="wrap-login100 p-t-50 p-b-90 p-l-45 p-r-45">
-			<form class="login100-form validate-form flex-sb flex-w" action="login" method="post">
-				<a href="index" class="login100-form-title p-b-1"><img src="resources/assets/main/img/import/img/logo.png"></a>
-				<span class="login100-form-minititle p-b-21"></span>
-				<input type="hidden" id="msg" name="msg" value="${error_msg}">
-				
-				<!-- id -->
-				<span class="txt1"><i class="fa fa-asterisk"></i>&nbsp;&nbsp; 아이디
-				<span class="txt2" id="warning_id"></span></span>
-				<div class="wrap-input100 validate-input m-b-14">
-					<input class="input50" type="text" id="user_id" name="user_id" placeholder="6~20자 영어 또는 숫자로 입력하세요.">
-					<span class="focus-input50"></span>
-				</div>
-				
-				<!-- pw -->
-				<span class="txt1"><i class="fa fa-lock"></i>&nbsp;&nbsp; 비밀번호
-				<span class="txt2" id="warning_pw"></span></span>
-				<div class="wrap-input100 validate-input m-b-16">
-					<input class="input50" type="password" id="user_pwd" name="user_pwd" placeholder="특수문자 포함 8자이상 16자 이하로 입력하세요.">
-					<span class="focus-input50"></span>
-				</div>
-				
-				<div class="flex-sb-m w-full p-t-3 p-b-3">
-					<div class="contact100-form-checkbox">
+
+<style>
+	#container {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		clear: both;
+	}
+	
+	.wcenter {
+		position: relative;
+		max-width: 50%;
+		margin: 0 auto;
+		padding: 0;
+	}
+	
+	.login_bx {
+		margin: 90px auto 90px;
+		border: 1px solid #eee;
+		padding: 30px 0;
+	}
+	
+	.login_form {
+		padding: 0px 85px;
+	}
+	
+	.form-control-basic {
+		display: block;
+		width: 100%;
+		height: 60px;
+		padding: 8px 29px;
+		border: 1px solid #eee;
+		border-radius: 4px;
+		color: #858585;
+	}
+	
+	.bg_blu { background-color: #349eff; color: white;}
+	
+	.login_form > form > .btn {
+		display: block;
+		width: 100%;
+		padding: 18px 25px;
+		font-size: 22px;
+	}
+	
+	.login_logo {
+		text-align: center;
+		display: block;
+	}
+	
+	.txt_right { text-align: right; }
+	
+</style>
+
+<div class="container" id="container">
+	<div class="wcenter">
+		<div class="login_bx">
+			<a href="index" class="login_logo m-t-10 m-b-40"><img src="resources/assets/main/img/import/img/logo.png"></a>
+			<div class="login_form">
+				<form>
+					<input type="text" class="form-control-basic" placeholder="아이디를 입력하세요">
+					<input type="text" class="form-control-basic m-t-10 m-b-10" placeholder="비밀번호를 입력하세요">
+					<div class="txt_right m-b-10">
+						<a href="#" class="txt1-1">비밀번호 찾기</a>&nbsp;|&nbsp;
+						<a href="user_sign_up_page" class="txt1-1">개인 회원가입</a>&nbsp;|&nbsp;
+						<a href="cpn_sign_up_page" class="txt1-1">기업 회원가입</a>
 					</div>
-					<div>
-						<a href="find_info" class="txt1-1">비밀번호 찾기</a>&nbsp;|&nbsp;
-						<a href="sign_up" class="txt1-1">개인 회원가입</a>&nbsp;|&nbsp;
-						<a href="cpn_sign_up" class="txt1-1">기업 회원가입</a>
-					</div>
-				</div>
-				<div class="container-login100-form-btn m-t-17">
-					<button type="submit" class="login100-form-btn" onclick="return L_validation();">
-						로그인
-					</button>
-				</div>
-			</form>
+					<button type="submit" class="btn bg_blu btn-lg">로그인</button>
+				</form>
+			</div>
 		</div>
 	</div>
 </div>
-<div id="dropDownSelect1"></div>

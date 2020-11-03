@@ -299,7 +299,7 @@
 				
 				<div class="post_list">
 					<div class="list_box">
-						<div class="list_item_link" onclick="location.href='#'" style="cursor:pointer;">
+						<div class="list_item_link" onclick="location.href='gh_details_page'" style="cursor:pointer;">
 							<div class="list_contents-left">
 								<div class="thumbnail_box">
 									<img src="resources/assets/main/img/trip/1.png" alt="게하모 로고">
