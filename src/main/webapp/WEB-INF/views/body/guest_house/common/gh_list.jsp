@@ -538,6 +538,22 @@
 					<!--  -->
 					
 				</div>
+				<!-- 페이징 [s] -->
+				<div style="width:100%; text-align:center;" class="m-t-50 m-b-30">
+					<div style="display: inline-block; width:100%; text-align:center;">
+						<a href="javascript:void(0);" style="display: inline-block;" class="m-r-20">이전</a>
+						<div style="display: inline-block;">
+							<a href="javascript:void(0);" class="sp_active" style="display: inline-block; min-width: 10px; height: 30px; margin: 0 4px; padding: 0 10px; border-radius:30px; font-size: 16px; line-height: 30px;">1</a>
+							<a href="javascript:void(0);" style="display: inline-block; min-width: 10px; height: 30px; margin: 0 4px; padding: 0 10px; border-radius:30px; font-size: 16px; line-height: 30px;">2</a>
+							<a href="javascript:void(0);" style="display: inline-block; min-width: 10px; height: 30px; margin: 0 4px; padding: 0 10px; border-radius:30px; font-size: 16px; line-height: 30px;">3</a>
+							<a href="javascript:void(0);" style="display: inline-block; min-width: 10px; height: 30px; margin: 0 4px; padding: 0 10px; border-radius:30px; font-size: 16px; line-height: 30px;">4</a>
+							<a href="javascript:void(0);" style="display: inline-block; min-width: 10px; height: 30px; margin: 0 4px; padding: 0 10px; border-radius:30px; font-size: 16px; line-height: 30px;">5</a>
+							<a href="javascript:void(0);" style="display: inline-block; min-width: 10px; height: 30px; margin: 0 4px; padding: 0 10px; border-radius:30px; font-size: 16px; line-height: 30px;">6</a>
+						</div>
+						<a href="javascript:void(0);" style="display: inline-block;" class="m-l-20">다음</a>
+					</div>
+				</div>
+				<!-- 페이징 [e] -->
 			</div>
 			<!-- 오른쪽 게스트하우스 리스트 [e] -->
 		</div>
