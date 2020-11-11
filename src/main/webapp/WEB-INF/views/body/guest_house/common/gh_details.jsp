@@ -152,10 +152,27 @@
 		text-align: right;
 	}
 	
-	.top_info_facility_infomation_box {
-		padding: 30px 0;
+	.top_info_additional_infomation_box {
+		margin-top: 30px;
 		border-bottom: 1px solid #eee;
 	}
+	
+	.additional_title {
+		margin-bottom: 10px;
+		font-weight: 700;
+	}
+	
+	.additional_contents {
+		color: #808080;
+		font-weight: 400;
+	}
+	
+	.price_top_title > h6 {
+		color: #808080;
+		font-weight: 400;
+	}
+	
+	.top_info_like > strong { color: #808080; }
 	
 </style>
 
@@ -213,7 +230,7 @@
 				<div class="top_info_price_box">
 					<div class="top_info_price_top">
 						<div class="price_top_title">
-							<h6 style="color:#808080;">방</h6>
+							<h6>방</h6>
 						</div>
 					</div>
 					<div class="top_info_price_mid">
@@ -228,11 +245,26 @@
 						<a href="#" class="top_info_review">3명의 리뷰보기</a>
 					</span>
 					<span class="top_info_like">
-						이 숙소를 추천하는 <strong style="color: #808080;">23</strong>명
+						이 숙소를 추천하는 <strong>23</strong>명
 					</span>
 				</div>
-				<div class="top_info_facility_infomation_box">
-					
+				<div class="top_info_additional_infomation_box">
+					<h4 class="additional_title">위치</h4>
+					<h6 class="additional_contents">서울특별시 관악구 남부순환로 144길 35</h6>
+				</div>
+				<div class="top_info_additional_infomation_box">
+					<h4 class="additional_title">사장님 한마디</h4>
+					<div style="height: 170px;">
+						<h6 class="additional_contents">
+							숙박시설의 한 종류로, 한국한정으로 줄여서 '게하'라고 부르기도 한다. 
+							호스텔과 비슷하면서도 좀 다르다. 
+							대한민국 내에서 호스텔, 소위 유스호스텔은 흔히 수련회할 때 묵는 곳으로 인식된다. 
+							일단 여행자에게 저렴한 숙박공간을 제공하며, 공동생활을 한다는 점에서는 같으나, 
+							게스트하우스는 유스호스텔보다는 소규모이고 좀 더 가족적(?)인 분위기에 호스텔연맹 같은 곳에 가입하지 않고 개인이 운영하는 경우가 일반이다.
+							단체실이 주가 되는 호스텔에 비해 대부분의 게스트하우스는 가족 또는 커플 단위의 개인실(주로 2~4 인용)도 보유하고 있는 게 특징.
+							물론 개인실도 주인 마음대로 개인여행자를 함께 몰아넣을 수 있다.
+						</h6>
+					</div>
 				</div>
 			</div>
 		</div>
