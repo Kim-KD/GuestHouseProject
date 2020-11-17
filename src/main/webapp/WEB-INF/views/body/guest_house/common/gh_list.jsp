@@ -49,7 +49,7 @@
 		width: 100%;
 	}
 	
-	.thumbnail_box > .list_like {
+/* 	.thumbnail_box > .list_like {
 		display: inline-block;
 		position: absolute;
 		top: 10px;
@@ -67,7 +67,7 @@
 		background-size: 20px 18px;
 		background-position: center center;
 		background-repeat: no-repeat;
-	}
+	} */
 	
 	.list_contents-right {
 		display: inline-flex;
@@ -302,7 +302,7 @@
 						<div class="list_item_link" onclick="location.href='gh_details_page'" style="cursor:pointer;">
 							<div class="list_contents-left">
 								<div class="thumbnail_box">
-									<img src="resources/assets/main/img/trip/1.png" alt="게하모 로고">
+									<img src="resources/assets/main/img/trip/1.png">
 									<!-- <div class="list_like">
 										<button type="button" class="like_btn">
 											<i class="fa fa-heart-o"></i>
@@ -351,7 +351,7 @@
 						<div class="list_item_link" onclick="location.href='#'" style="cursor:pointer;">
 							<div class="list_contents-left">
 								<div class="thumbnail_box">
-									<img src="resources/assets/main/img/trip/2.png" alt="게하모 로고">
+									<img src="resources/assets/main/img/trip/2.png">
 									<!-- <div class="list_like">
 										<button type="button" class="like_btn">
 											<i class="fa fa-heart-o"></i>
@@ -398,7 +398,7 @@
 						<div class="list_item_link" onclick="location.href='#'" style="cursor:pointer;">
 							<div class="list_contents-left">
 								<div class="thumbnail_box">
-									<img src="resources/assets/main/img/trip/3.png" alt="게하모 로고">
+									<img src="resources/assets/main/img/trip/3.png">
 									<!-- <div class="list_like">
 										<button type="button" class="like_btn">
 											<i class="fa fa-heart-o"></i>
@@ -445,7 +445,7 @@
 						<div class="list_item_link" onclick="location.href='#'" style="cursor:pointer;">
 							<div class="list_contents-left">
 								<div class="thumbnail_box">
-									<img src="resources/assets/main/img/trip/1.png" alt="게하모 로고">
+									<img src="resources/assets/main/img/trip/1.png">
 									<!-- <div class="list_like">
 										<button type="button" class="like_btn">
 											<i class="fa fa-heart-o"></i>
@@ -492,7 +492,7 @@
 						<div class="list_item_link" onclick="location.href='#'" style="cursor:pointer;">
 							<div class="list_contents-left">
 								<div class="thumbnail_box">
-									<img src="resources/assets/main/img/trip/2.png" alt="게하모 로고">
+									<img src="resources/assets/main/img/trip/2.png">
 									<!-- <div class="list_like">
 										<button type="button" class="like_btn">
 											<i class="fa fa-heart-o"></i>

@@ -174,6 +174,251 @@
 	
 	.top_info_like > strong { color: #808080; }
 	
+	.partner_info_box {
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+		display: inline-block;
+		width: 100%;
+	}
+	
+	.partner_info_img {
+		display: inline-block;
+		width: 70px;
+		height: 70px;
+		vertical-align: middle;
+		position: relative;
+		float: none;
+	}
+	
+	.partner_info_img > img {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+	}
+	
+	.partner_info_txt {
+		display: inline-block;
+		width: 85%;
+		vertical-align: middle;
+	}
+	
+	.partner_info_title {
+		font-size: 18px;
+		color: #484848;
+		font-weight: 500;
+	}
+	
+	.partner_info_contents {
+		font-size: 14px;
+		color: #808080;
+	}
+	
+	.sub_title {
+		padding: 2.5em 0 1.1em;
+		font-size: 22px;
+		color: #000;
+	}
+	
+	.calendar_wrap {
+		display: inline-block;
+		width: 60%;
+		vertical-align: middle;
+	}
+	/*  */
+	.calendar_box {
+		position: relative;
+		border-radius: 2.5px;
+		border: solid 1px #eeeeee;
+	}
+	
+	.calendar_input_box {
+		position: relative;
+		display: inline-block;
+		width: 48.5%;
+		vertical-align: middle;
+		background-color: #fff;
+	}
+	
+	.calendar_input_box > input {
+		padding: 0 20px;
+		border: none;
+		width: 100%;
+		height: 48px;
+		line-height: 48px;
+		text-align: center;
+	}
+	
+	.calendar_input_label {
+		width: 100%;
+		height: 100%;
+		padding: 0 20px;
+		margin: 0;
+		font-weight: 400;
+		font-size: 16px;
+		color: #484848;
+		text-align: center;
+		line-height: 50px;
+	}
+	
+	.select_wrap {
+		display: inline-block;
+		width: 20%;
+		text-align: left;
+		margin: 0 22px 0 0;
+		vertical-align: middle;
+	}
+	
+	.select_box {
+		width: 100%;
+		height: 50px;
+		border: 1px solid #eee;
+		font-size: 16px;
+		text-align: left;
+		color: #484848;
+		background: #fff;
+		padding: 0 0 0 16px;
+	}
+	
+	.room_list_sub_info_box {
+		font-size: 16px;
+		font-weight: 400;
+		color: #808080;
+	}
+	
+	.count_room { display: inline-flex; }
+	
+	.count_room > b { 
+		font-weight: bold;
+		color: #808080;
+	}
+	
+	.room_list_box > .room_list:first-child { border-top: 1px solid #eee; }
+	
+	.room_list {
+		display: block;
+		padding: 40px 10px;
+		border-bottom: 1px solid #eee;
+		font-size: 0;
+	}
+	
+	.list_contents-left {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.list_contents-left > .thumbnail_box {
+		position: relative;
+		width: 220px;
+		height: 160px;
+		overflow: hidden;
+		background-color: #f3f3f3;	
+	}
+	
+	.thumbnail_box > img {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+	}
+	
+	.room_list > .list_contents-right {
+		display: inline-block;
+		width: calc(100% - 240px);
+		vertical-align: middle;
+	}
+	
+	.room_list > .list_contents-right > .list_txt_top {
+		display: block;
+		width: 100%;
+	}
+	
+	.list_txt_top > .title_box > .title {
+		font-size: 20px;
+		font-weight: 400;
+		color: #222;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	
+	.list_txt_top > list_txt_bottom {
+		display: block;
+		font-size: 0;
+	}
+	
+	.list_txt_bottom-left {
+		display: inline-block;
+		width: 45%;
+		vertical-align: top;
+	}
+	
+	.room_info_txt_box {
+		display: block;
+		font-size: 14px;
+		font-weight: 400;
+		color: #808080;
+		margin: 0 0 4px 0;
+		vertical-align: middle;
+		padding: 0 100px 0 0;
+	}
+	
+	.list_txt_bottom-right {
+		display: inline-block;
+		width: 55%;
+		vertical-align: top;
+	}
+	
+	.price_wrap {
+		display: inline-block;
+		width: calc(100% - 120px);
+		text-align: right;
+		margin-right: 20px;
+		vertical-align: top;
+	}
+	
+	.price_basis_box {
+		font-size: 14px;
+		font-weight: 400;
+		color: #808080;
+	}
+	
+	.price_wrap > .price__box > .current_price_box {
+		display: inline-flex;
+		font-size: 24px;
+		font-weight: 400;
+		color: #222;
+	}
+	
+	.price_wrap > .price__box > .current_price_box > .current_price {
+		display: inline-block;
+		font-size: 24px;
+		font-weight: 700;
+		color: #222;
+	}
+	
+	.meta_price_box {
+		display: block;
+		font-size: 14px;
+		font-weight: 400;
+		color: #808080;
+	}
+	
+	.button_wrap {
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	.test {
+		display: block;
+		width: 100px;
+		height: 48px;
+		border: none;
+		background-color: #ff4a52;
+		border-radius: 4px;
+		font-size: 16px;
+		font-weight: 400;
+		color: #fff;
+	}
+
 </style>
 
 <div id="container" class="container">
@@ -224,7 +469,7 @@
 			
 			<div class="top_info_box_right">
 				<span class="top_info_icon">
-					<a class="top_info_icon_heart" style="cursor:pointer;"><i class="far fa-heart fa-2x"></i></a>
+					<a class="top_info_icon_heart" style="cursor: pointer;"><i class="far fa-heart fa-2x"></i></a>
 				</span>
 				<h2 class="top_info_title">게스트하우스</h2>
 				<div class="top_info_price_box">
@@ -252,7 +497,7 @@
 					<h4 class="additional_title">위치</h4>
 					<h6 class="additional_contents">서울특별시 관악구 남부순환로 144길 35</h6>
 				</div>
-				<div class="top_info_additional_infomation_box">
+				<div class="m-t-30">
 					<h4 class="additional_title">사장님 한마디</h4>
 					<div style="height: 170px;">
 						<h6 class="additional_contents">
@@ -268,5 +513,96 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	
+	<div class="partner_info_box_wrap">
+		<div class="partner_info_box p-t-20 p-b-20 m-b-50">
+			<div class="partner_info_img">
+				<img src="resources/assets/main/img/import/img/unnamed.png" alt="프로필 없믐">
+			</div>
+			<div class="partner_info_txt p-l-10">
+				<div class="partner_info_title m-b-5">게스트하우스</div>
+				<div class="partner_info_contents">안녕하세요? 게스트하우스 입니다.</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="room_reservation_box">
+		<h3 class="sub_title m-b-0">객실 예약</h3>
+		<div class="room_reservation_wrap m-b-60">
+			<div class="calendar_wrap m-r-8">
+				<div class="calendar_box">
+					<div class="calendar_input_box">
+						<label class="calendar_input_label">체크인</label>
+					</div>
+					<label><i class="fas fa-arrow-right"></i></label>
+					<div class="calendar_input_box">
+						<label class="calendar_input_label">체크아웃</label>
+					</div>
+				</div>
+			</div>
+			<div class="select_wrap">
+				<select class="select_box">
+					<option>1명</option>
+					<option>2명</option>
+					<option>3명</option>
+				</select>
+			</div>
+		</div>
+		
+		<div class="room_list_wrap">
+			<div class="room_list_sub_info_box m-b-10">
+				<p class="count_room">총 <b>4</b>개의 객실이 있습니다.</p>
+			</div>
+			<div class="room_list_box">
+				<div class="room_list">
+					<div class="list_contents-left">
+						<div class="thumbnail_box">
+							<img src="resources/assets/main/img/trip/1.png">
+						</div>
+					</div>
+					<div class="list_contents-right m-l-20">
+						<div class="list_txt_top m-b-10">
+							<div class="title_box">
+								<h2 class="title m-t-10 m-b-15">남자 4인 도미토리</h2>
+							</div>
+							<div class="list_txt_bottom">
+								<div class="list_txt_bottom-left">
+									<div class="room_info_txt_box">
+										<span>남성 도미토리</span>
+										<span>객실정원 1~4명</span>									
+									</div>
+									<div class="room_info_txt_box">
+										<span>최소예약 1박이상</span>									
+									</div>
+								</div>
+								<div class="list_txt_bottom-right">
+									<div class="price_wrap">
+										<div class="price_basis_box">1인 1박</div>
+										<div class="price__box">
+											<div class="current_price_box">
+												<div class="current_price">20,000</div>
+												원(￦ 25,000)
+											</div>
+										</div>
+										<div class="meta_price_box m-t-20">1인1박 요금 25,000원(￦ 25,000)</div>
+									</div>
+									<div class="button_wrap">
+										<div class="button_box">
+											<button class="test">예약문의</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!--  -->
+				
+				<!--  -->
+			</div>
+		</div>
+		
 	</div>
 </div>
