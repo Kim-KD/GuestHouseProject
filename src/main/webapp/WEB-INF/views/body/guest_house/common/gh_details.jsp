@@ -407,7 +407,7 @@
 		vertical-align: top;
 	}
 	
-	.test {
+	.reservation_button {
 		display: block;
 		width: 100px;
 		height: 48px;
@@ -417,6 +417,11 @@
 		font-size: 16px;
 		font-weight: 400;
 		color: #fff;
+		cursor: pointer;
+	}
+	
+	.reservation_button:hover {
+		box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5) !important;
 	}
 
 </style>
@@ -527,7 +532,7 @@
 		</div>
 	</div>
 	
-	<div class="room_reservation_box">
+	<div class="room_check">
 		<h3 class="sub_title m-b-0">객실 예약</h3>
 		<div class="room_reservation_wrap m-b-60">
 			<div class="calendar_wrap m-r-8">
@@ -589,7 +594,7 @@
 									</div>
 									<div class="button_wrap">
 										<div class="button_box">
-											<button class="test">예약문의</button>
+											<button class="reservation_button">예약문의</button>
 										</div>
 									</div>
 								</div>
@@ -599,10 +604,54 @@
 				</div>
 				
 				<!--  -->
-				
+				<div class="room_list">
+					<div class="list_contents-left">
+						<div class="thumbnail_box">
+							<img src="resources/assets/main/img/trip/1.png">
+						</div>
+					</div>
+					<div class="list_contents-right m-l-20">
+						<div class="list_txt_top m-b-10">
+							<div class="title_box">
+								<h2 class="title m-t-10 m-b-15">남자 4인 도미토리</h2>
+							</div>
+							<div class="list_txt_bottom">
+								<div class="list_txt_bottom-left">
+									<div class="room_info_txt_box">
+										<span>남성 도미토리</span>
+										<span>객실정원 1~4명</span>									
+									</div>
+									<div class="room_info_txt_box">
+										<span>최소예약 1박이상</span>									
+									</div>
+								</div>
+								<div class="list_txt_bottom-right">
+									<div class="price_wrap">
+										<div class="price_basis_box">1인 1박</div>
+										<div class="price__box">
+											<div class="current_price_box">
+												<div class="current_price">20,000</div>
+												원(￦ 25,000)
+											</div>
+										</div>
+										<div class="meta_price_box m-t-20">1인1박 요금 25,000원(￦ 25,000)</div>
+									</div>
+									<div class="button_wrap">
+										<div class="button_box">
+											<button class="reservation_button">예약문의</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<!--  -->
+				
 			</div>
 		</div>
+	</div>
+	<div class="room_introduce">
 		
 	</div>
 </div>
