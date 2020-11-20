@@ -51,6 +51,7 @@
 	}
 	
 	.txt_right { text-align: right; }
+	.nsdow:focus { box-shadow: none; }
 	
 </style>
 
@@ -67,7 +68,7 @@
 						<a href="user_sign_up_page" class="txt1-1">개인 회원가입</a>&nbsp;|&nbsp;
 						<a href="cpn_sign_up_page" class="txt1-1">기업 회원가입</a>
 					</div>
-					<button type="submit" class="btn bg_blu btn-lg">로그인</button>
+					<button type="submit" class="btn bg_blu btn-lg nsdow">로그인</button>
 				</form>
 			</div>
 		</div>

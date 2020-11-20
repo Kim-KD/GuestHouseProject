@@ -152,6 +152,7 @@
 	.color_red { color: #e93d3d; }
 	.bg_dark_grey { background-color: #484848; color: white; }
 	.bg_blu { background-color: #349eff; color: white;}
+	.nsdow:focus { box-shadow: none; }
 	
 </style>
 
@@ -288,8 +289,8 @@
     			</table>
     			
     			<div class="text-center m-t-40">
-					<button class="btn bg_blu btn-lg">회원가입</button>
-					<button class="btn bg_dark_grey btn-lg ml5">취소</button>
+					<button class="btn bg_blu btn-lg nsdow">회원가입</button>
+					<button class="btn bg_dark_grey btn-lg m-l-5 nsdow">취소</button>
 				</div>
 	    	</form>
     	</div>
