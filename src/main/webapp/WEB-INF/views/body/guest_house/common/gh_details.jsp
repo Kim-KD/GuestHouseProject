@@ -430,6 +430,58 @@
 		color: #7a838b;
 		line-height: 1.5em;
 	}
+	
+	.sub_title_wrap > .sub_title {
+		padding: 55px 0 30px;
+		border-top: 1px solid #ccc;
+		font-size: 25px;
+		color: #484848;
+		font-weight: 500;
+	}
+	
+	.introduce1 > h4 {
+		color: #484848;
+		font-weight: 500;
+		padding-bottom: 20px;
+	}
+	
+	.room_service {
+		padding: 25px 0;
+		border: 1px solid #edeceb;
+	}
+	
+	.room_service_list {
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+	}
+	
+	.room_service_list > li {
+		display: table-cell;
+		vertical-align: top;
+		position: relative;
+		border-right: 1px solid #edeceb;
+	}
+	
+	.room_service_list > li > h5 {
+		padding: 0 25px 20px;
+		font-size: 18px;
+		color: #000;
+	}
+	
+	.room_service_list > li > .chk_list > li {
+		float: none;
+		width: auto;
+		border: none;
+		padding: 7px 0 7px 25px;
+		color: #888;
+		font-size: 14px;
+		font-weight: 400;
+	}
+	
+	.room_service_list > li:last-child { border-right: none; }
+	
+	.chk_list > li > i { color: #42c3bf; }
 
 </style>
 
@@ -675,6 +727,54 @@
 				하지만 푹 잘 수 있고, 멍 때리고, 하늘과 바다를 하염없이 보고, 다락에서 맘껏 책 읽고, 그렇게 집처럼 편하게 쉴 수 있는 그런 공간입니다. <br><br>
 				세화 오일장, 해녀박물관, 세화 해수욕장, 벨롱장(벼룩시장) 등이 도보로 이동 가능한 위치에 있으며, 비자림, 월정리, 다랑쉬오름, 용눈이오름, 레일바이크, 메이즈랜드, 만장굴 등이 차량 20분 이내 거리에 있어서 제주 여행을 하는데 무척 편리할 겁니다.
 			</h6>
+		</div>
+	</div>
+	<div class="room_details_introduce">
+		<div class="sub_title_wrap m-t-60">
+			<h3 class="sub_title m-b-0">숙소 상세 정보</h3>
+		</div>
+		<div class="introduce1">
+			<h4 class="m-b-0">부가시설 및 서비스</h4>
+			<div class="room_service">
+				<ul class="room_service_list">
+					<li>
+						<h5>공용시설</h5>
+						<ul class="chk_list">
+							<li><i class="fas fa-check"></i>&nbsp;Wifi</li>
+							<li><i class="fas fa-check"></i>&nbsp;헤어드라이기</li>
+							<li><i class="fas fa-check"></i>&nbsp;전자렌지</li>
+							<li><i class="fas fa-check"></i>&nbsp;주차가능 - 숙소 앞 길거리 주차(무료)</li>
+							<li><i class="fas fa-check"></i>&nbsp;게스트 부엌</li>
+							<li><i class="fas fa-check"></i>&nbsp;토스트기</li>
+							<li><i class="fas fa-check"></i>&nbsp;휴게실</li>
+							<li><i class="fas fa-check"></i>&nbsp;공용PC</li>
+							<li><i class="fas fa-check"></i>&nbsp;프린터 사용</li>
+							<li><i class="fas fa-check"></i>&nbsp;정원</li>
+						</ul>
+					</li>
+					<li>
+						<h5>욕실</h5>
+						<ul class="chk_list">
+							<li><i class="fas fa-check"></i>&nbsp;화장실(6개)</li>
+							<li><i class="fas fa-check"></i>&nbsp;샤워실(4개)</li>
+							<li><i class="fas fa-check"></i>&nbsp;수건</li>
+							<li><i class="fas fa-check"></i>&nbsp;비누</li>
+							<li><i class="fas fa-check"></i>&nbsp;치약</li>
+							<li><i class="fas fa-check"></i>&nbsp;샴푸</li>
+							<li><i class="fas fa-check"></i>&nbsp;린스</li>
+							<li>바디샴푸</li>
+						</ul>
+					</li>
+					<li>
+						<h5>기타서비스</h5>
+						<ul class="chk_list">
+							<li><i class="fas fa-check"></i>&nbsp;짐 보관 서비스</li>
+							<li><i class="fas fa-check"></i>&nbsp;신용카드 결제가능</li>
+							<li><i class="fas fa-check"></i>&nbsp;유아 숙박불가</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
