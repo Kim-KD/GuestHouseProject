@@ -480,8 +480,73 @@
 	}
 	
 	.room_service_list > li:last-child { border-right: none; }
-	
 	.chk_list > li > i { color: #42c3bf; }
+	
+	.room_review_wrap > .sub_title_wrap > h3 { padding: 55px 0 10px }
+	
+	.sub_contents {
+		padding: 0 0 16px;
+		width: 780px;
+	}
+	
+	.sub_contents_txt {
+		display: inline-block;
+		font-size: 15px;
+		font-weight: 400;
+		color: #484848c4;
+	}
+	
+	.column_left { 
+		width: 780px; 
+		display: inline-block;
+	}
+	.review_list {
+		margin-top: 0;
+		border-top: 1px solid #ccc;
+	}
+	
+	.review_ditails {
+		padding: 25px 0;
+		border-bottom: 1px solid #edeceb;
+	}
+	
+	.column_left > .review_list:last-child > .review_ditails { border-bottom-color: #000; }
+	.user_review_wrap { position: relative; }
+	
+	.meta {
+		margin-top: 8px;
+		overflow: hidden;
+		padding: 0 0 12px;
+	}
+	
+	.meta > .user {
+		float: left;
+		line-height: 16px;
+		font-size: 15px;
+		font-weight: 500;
+		color: #484848;
+	}
+	
+	.meta > .date {
+		float: right;
+		line-height: 16px;
+		font-size: 15px;
+		color: #aaa;
+	}
+	
+	.user_review_wrap > .txt {
+		padding: 13px 0 20px;
+		line-height: 1.8;
+		color: #484848c4;
+		font-size: 14px;
+		font-weight: 400;
+	}
+	
+	.column_right {
+		display: inline-block;
+		position: absolute;
+		margin-left: 30px;
+	}
 
 </style>
 
@@ -774,6 +839,72 @@
 						</ul>
 					</li>
 				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="room_review_wrap p-b-60">
+		<div class="sub_title_wrap m-t-60">
+			<h3 class="sub_title m-b-0">리뷰</h3>
+		</div>
+		<div class="room_review">
+			<div class="sub_contents">
+				<div class="sub_contents_txt">리뷰의 신뢰도를 위해 실제로 숙박하신 분들만 작성 가능합니다.</div>
+			</div>
+			<div class="column_left">
+				<div class="review_list">
+					<div class="review_ditails">
+						<div class="user_review_wrap">
+							<div class="meta">
+								<div class="user">사랑하리</div>
+								<div class="date">2020.07.30</div>
+							</div>
+							<p class="txt">사장님이 친절하시고 숙소도 깔끔해서 편히 쉬다 가요! 주변에 교통도 괜찮은 편이라 어디든 버스타고 다녔네요. 감사합니다 :-)</p>
+						</div>
+					</div>
+				</div>
+				
+				<!--  -->
+				<div class="review_list">
+					<div class="review_ditails">
+						<div class="user_review_wrap">
+							<div class="meta">
+								<div class="user">카리타스</div>
+								<div class="date">2017.07.08</div>
+							</div>
+							<p class="txt">서비스가 훌륭했습니다. 여행하면서 피로 풀기에 좋았네요.</p>
+						</div>
+					</div>
+				</div>
+				<div class="review_list">
+					<div class="review_ditails">
+						<div class="user_review_wrap">
+							<div class="meta">
+								<div class="user">윤블리현</div>
+								<div class="date">2016.01.25</div>
+							</div>
+							<p class="txt">저희가 간 날이 바람이 엄청 부는 날씨였는데 바다옆에 위치한 숙소여서 더 바람을 맞을 수 있어서 위치 부문에서 별은 하나 뺐습니다. 하지만 여름에 숙박하게된다면 정말 너무 좋을 것 같습니다. 시설도 너무 좋고 인테리어도 잘되어있고 장판도 하나씩 구비해주셔서 따듯하게 지낼 수 있었습니다. 게하 스탭은 무척 친절하시고 낯가려서 말도 못하는 저희에게 먼저 말걸어주시고 장난도 쳐주셔서 편하게 있을 수 있었습니다. 정말 여름에 다시 한 번 꼭 와서 숙박 하고 싶을 정도 입니다! 정말 강력히 추천합니다!</p>
+						</div>
+					</div>
+				</div>
+				<!--  -->
+				
+				<div style="width:100%; text-align:center;" class="m-t-50 m-b-30">
+					<div style="display: inline-block; width:100%; text-align:center;">
+						<a href="javascript:void(0);" style="display: inline-block;" class="m-r-20">이전</a>
+						<div style="display: inline-block;">
+							<a href="javascript:void(0);" class="sp_active" style="display: inline-block; min-width: 10px; height: 30px; margin: 0 4px; padding: 0 10px; border-radius:30px; font-size: 16px; line-height: 30px;">1</a>
+							<a href="javascript:void(0);" style="display: inline-block; min-width: 10px; height: 30px; margin: 0 4px; padding: 0 10px; border-radius:30px; font-size: 16px; line-height: 30px;">2</a>
+							<a href="javascript:void(0);" style="display: inline-block; min-width: 10px; height: 30px; margin: 0 4px; padding: 0 10px; border-radius:30px; font-size: 16px; line-height: 30px;">3</a>
+							<a href="javascript:void(0);" style="display: inline-block; min-width: 10px; height: 30px; margin: 0 4px; padding: 0 10px; border-radius:30px; font-size: 16px; line-height: 30px;">4</a>
+							<a href="javascript:void(0);" style="display: inline-block; min-width: 10px; height: 30px; margin: 0 4px; padding: 0 10px; border-radius:30px; font-size: 16px; line-height: 30px;">5</a>
+							<a href="javascript:void(0);" style="display: inline-block; min-width: 10px; height: 30px; margin: 0 4px; padding: 0 10px; border-radius:30px; font-size: 16px; line-height: 30px;">6</a>
+						</div>
+						<a href="javascript:void(0);" style="display: inline-block;" class="m-l-20">다음</a>
+					</div>
+				</div>
+			</div>
+			<div class="column_right">
+				<textarea style="margin-top: 0px; margin-bottom: 0px; width: 300px; height: 292px;" class="review_w">리뷰를 등록해주세요.</textarea>
 			</div>
 		</div>
 	</div>
