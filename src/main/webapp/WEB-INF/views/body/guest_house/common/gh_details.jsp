@@ -492,7 +492,7 @@
 	.sub_contents_txt {
 		display: inline-block;
 		font-size: 15px;
-		font-weight: 400;
+		font-weight: 600;
 		color: #484848c4;
 	}
 	
@@ -546,6 +546,50 @@
 		display: inline-block;
 		position: absolute;
 		margin-left: 30px;
+	}
+	
+	.comment_box {
+		margin-top: 20px;
+		padding: 35px 0;
+		background-color: #f9f9f9;
+		color: #484848;
+    	display: inline-block;
+	}
+	
+	.left-area {
+		width: 200px;
+		float: left;
+		padding-left: 40px;
+	}
+	
+	.right-area {
+		width: 580px;
+		float: right;
+		padding-right: 40px;
+	}
+	
+	.cmt_edit {
+		margin: 10px 0;
+		position: relative;
+	}
+	
+	.cmt_edit > textarea {
+		height: 85px;
+		padding: 10px 100px 10px 12px;
+		border-color: #edeceb;
+		resize: none;
+	}
+	
+	.cmt_edit > button {
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 85px;
+		border: 1px solid #454545;
+		background: #5b5b5b;
+		color: #fff;
+		cursor: pointer;
 	}
 
 </style>
@@ -888,6 +932,18 @@
 				</div>
 				<!--  -->
 				
+				<div class="comment_box">
+					<div class="left-area">
+						<h3>리뷰를 <br>작성해주세요!</h3>
+					</div>
+					<div class="right-area">
+						<div class="cmt_edit">
+							<textarea class="form-control" placeholder="리뷰를 입력해주세요."></textarea>
+							<button type="submit" onclick="">리뷰작성</button>
+						</div>
+					</div>
+				</div>
+				
 				<div style="width:100%; text-align:center;" class="m-t-50 m-b-30">
 					<div style="display: inline-block; width:100%; text-align:center;">
 						<a href="javascript:void(0);" style="display: inline-block;" class="m-r-20">이전</a>
@@ -902,9 +958,6 @@
 						<a href="javascript:void(0);" style="display: inline-block;" class="m-l-20">다음</a>
 					</div>
 				</div>
-			</div>
-			<div class="column_right">
-				<textarea style="margin-top: 0px; margin-bottom: 0px; width: 300px; height: 292px;" class="review_w">리뷰를 등록해주세요.</textarea>
 			</div>
 		</div>
 	</div>
