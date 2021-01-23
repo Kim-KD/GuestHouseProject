@@ -27,6 +27,10 @@ public class GuestHouseMvcController {
 	}
 	
 	// 게하 게시글 작성 page
+	@GetMapping("/gh_write_page")
+	public String gh_write_page() {
+		return "guest_house/common/gh_write/gh_write";
+	}
 	
 	// 게하 게시글 수정 page
 	

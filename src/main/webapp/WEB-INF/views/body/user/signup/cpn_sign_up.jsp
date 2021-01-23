@@ -2,13 +2,12 @@
 <script src="resources/data-components/user/sign_up.js"></script>
 
 <style>
-	#container { background-color: #edf0f5; }
-	
-	.join {
+	#container { 
+		background-color: #edf0f5;
 		padding: 60px 0 50px;
 		min-height: 748px;
 	}
-	
+		
 	.tit {
 		color: #8c929c;
 		font-size: 30px;
@@ -115,7 +114,7 @@
 		box-shadow: none;
 		color: #333;
 		font-size: 15px;
-		font-weight: 300;
+		font-weight: 400;
 		box-sizing: border-box;
 		display: block;
 		width: 100%;
@@ -158,7 +157,7 @@
 
 <div id="container">
 	<div id="contents" class="container">
-    	<div class="join">
+    	<div class="">
     		<div class="tit-wrap">
     			<h2 class="tit">회원가입</h2>
 	    		<h3 class="tit-split">정보 입력</h3>
@@ -213,13 +212,13 @@
     						<th class="table-col table-col-tit">비밀번호  <b class="color_red">*</b></th>
     						<td class="table-col">
     							<span class="input-wrap">
-	    							<input type="text">
+	    							<input type="password">
     							</span>
     						</td>
     						<th class="table-col table-col-tit">비밀번호 확인  <b class="color_red">*</b></th>
     						<td class="table-col">
     							<span class="input-wrap">
-	    							<input type="text">
+	    							<input type="password">
     							</span>
     						</td>
     					</tr>

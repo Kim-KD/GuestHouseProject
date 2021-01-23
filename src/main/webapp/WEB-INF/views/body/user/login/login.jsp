@@ -62,11 +62,9 @@
 			<div class="login_form">
 				<form>
 					<input type="text" class="form-control-basic" placeholder="아이디를 입력하세요">
-					<input type="text" class="form-control-basic m-t-10 m-b-10" placeholder="비밀번호를 입력하세요">
+					<input type="password" class="form-control-basic m-t-10 m-b-10" placeholder="비밀번호를 입력하세요">
 					<div class="txt_right m-b-10">
-						<a href="#" class="txt1-1">비밀번호 찾기</a>&nbsp;|&nbsp;
-						<a href="user_sign_up_page" class="txt1-1">개인 회원가입</a>&nbsp;|&nbsp;
-						<a href="cpn_sign_up_page" class="txt1-1">기업 회원가입</a>
+						<a href="#" class="txt1-1"><i class="fas fa-lock"></i> 아이디 / 비밀번호 찾기</a>
 					</div>
 					<button type="submit" class="btn bg_blu btn-lg nsdow">로그인</button>
 				</form>

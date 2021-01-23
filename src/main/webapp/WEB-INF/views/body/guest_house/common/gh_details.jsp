@@ -198,7 +198,7 @@
 	
 	.partner_info_txt {
 		display: inline-block;
-		width: 85%;
+		width: 60%;
 		vertical-align: middle;
 	}
 	
@@ -469,6 +469,15 @@
 		color: #000;
 	}
 	
+	.room_service_list > li > .chk_list > .disabled {
+		text-decoration: line-through;
+    	color: #e0e0e0;
+	}
+	
+	.chk_list > .disabled > i {
+		color: #e0e0e0;
+	}
+	
 	.room_service_list > li > .chk_list > li {
 		float: none;
 		width: auto;
@@ -671,16 +680,10 @@
 					<h6 class="additional_contents">서울특별시 관악구 남부순환로 144길 35</h6>
 				</div>
 				<div class="m-t-30">
-					<h4 class="additional_title">사장님 한마디</h4>
+					<h4 class="additional_title">공용시설</h4>
 					<div style="height: 170px;">
 						<h6 class="additional_contents">
-							숙박시설의 한 종류로, 한국한정으로 줄여서 '게하'라고 부르기도 한다. 
-							호스텔과 비슷하면서도 좀 다르다. 
-							대한민국 내에서 호스텔, 소위 유스호스텔은 흔히 수련회할 때 묵는 곳으로 인식된다. 
-							일단 여행자에게 저렴한 숙박공간을 제공하며, 공동생활을 한다는 점에서는 같으나, 
-							게스트하우스는 유스호스텔보다는 소규모이고 좀 더 가족적(?)인 분위기에 호스텔연맹 같은 곳에 가입하지 않고 개인이 운영하는 경우가 일반이다.
-							단체실이 주가 되는 호스텔에 비해 대부분의 게스트하우스는 가족 또는 커플 단위의 개인실(주로 2~4 인용)도 보유하고 있는 게 특징.
-							물론 개인실도 주인 마음대로 개인여행자를 함께 몰아넣을 수 있다.
+							Wifi, 헤어드라이기, 전자렌지, 주차가능, 게스트 부엌, 토스트기, 휴게실, 공용PC, 프린터 사용, 정원
 						</h6>
 					</div>
 				</div>
@@ -871,7 +874,7 @@
 							<li><i class="fas fa-check"></i>&nbsp;치약</li>
 							<li><i class="fas fa-check"></i>&nbsp;샴푸</li>
 							<li><i class="fas fa-check"></i>&nbsp;린스</li>
-							<li>바디샴푸</li>
+							<li class="disabled"><i class="fas fa-check"></i>&nbsp;바디샴푸</li>
 						</ul>
 					</li>
 					<li>

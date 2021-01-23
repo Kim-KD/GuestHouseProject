@@ -292,6 +292,7 @@
 			<div class="col-lg-9 col-md-9">
 				<div class="guestHouseTotal">
 					<h6 class="m-b-0">검색된 숙소 <strong>OO</strong>개</h6>
+					<a href="gh_write_page">글작성</a>
 				</div>
 				<div class="tit_and_info_area">
 					<h3 class="m-b-0">숙소</h3>

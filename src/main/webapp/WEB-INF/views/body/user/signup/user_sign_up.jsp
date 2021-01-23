@@ -76,7 +76,7 @@
 		padding: 6px 15px;
 		border: 1px solid #ccc;
 		border-radius: 4px;
-		color: #858585;
+		color: #333;
 	}
 	
 	.wid-lg {
@@ -149,9 +149,9 @@
 							비밀번호<b class="color_red">*</b>
 						</th>
 						<td>
-							<input type="text" class="form-control-input wid-lg m-b-10" maxlength="32" placeholder="비밀번호">
+							<input type="password" class="form-control-input wid-lg m-b-10" maxlength="32" placeholder="비밀번호">
 							<p class="form-control-p">8~32자 이내로 입력해 주세요</p><br>
-							<input type="text" class="form-control-input wid-lg" maxlength="32" placeholder="비밀번호 확인">
+							<input type="password" class="form-control-input wid-lg" maxlength="32" placeholder="비밀번호 확인">
 						</td>
 					</tr>
 					

@@ -18,6 +18,22 @@
         <put-attribute name="body" value="/WEB-INF/views/body/user/{1}/{2}.jsp" />
     </definition>
     <!--  user body content [e]  -->
+    
+    
+    <!--  write base layout [s]  -->
+	<definition name="write_layout" template="/WEB-INF/views/base.jsp">
+        <put-attribute name="header" value="/WEB-INF/views/user_components/header.jsp" />
+        <put-attribute name="topNav" value="/WEB-INF/views/user_components/navbar/topNav.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/views/user_components/footer.jsp" />
+    </definition>
+    <!--  write base layout [e]  -->
+    
+    <!--  write body content [s]  -->
+    <definition name="guest_house/common/*/*" extends="write_layout">
+        <put-attribute name="body" value="/WEB-INF/views/body/guest_house/common/{1}/{2}.jsp" />
+    </definition>
+    <!--  write body content [e]  -->
 	
 	
     <!--  base layout [s]  -->
@@ -34,6 +50,9 @@
         <put-attribute name="body" value="/WEB-INF/views/body/{1}/{2}/{3}.jsp" />
     </definition>
     <!--  body content [e]  -->
+
+
+
 
 	<!-- 예외 항목 -->
     <!-- <definition name="login"  template="/WEB-INF/views/body/login/login.jsp"/>
