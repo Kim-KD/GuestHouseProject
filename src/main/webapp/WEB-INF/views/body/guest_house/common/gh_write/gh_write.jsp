@@ -1,217 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
-<style>
-	#container { 
-		background-color: #edf0f5;
-		padding: 60px 0 50px;
-		min-height: 748px;
-	}
-		
-	.tit {
-		color: #8c929c;
-		font-size: 30px;
-		font-weight: 500;
-		line-height: 1.2em;
-		margin: 37px 0 16px 0;
-		float: left;
-	}
-	
-	.tit-split {
-		float: left;
-		font-size: 24px;
-		color: #8c929c;
-		position: relative;
-		margin: 47px 0 0 14px;
-		padding-left: 14px;
-	}
-	
-	.tit-split:before {
-		content: '';
-		display: inline-block;
-		position: absolute;
-		left: 0;
-		top: -2px;
-		bottom: -3px;
-		width: 1px;
-		background-color: #b7c8d2;
-	}
-	
-	.tit-wrap:after {
-		content: '';
-		clear: both;
-		display: block;
-	}
-	
-	.tit-wrap { position: relative; }
-	.tit-wrap:first-child .tit { margin-top: 0; }
-	.tit-wrap:first-child .tit-split { margin-top: 5px; }
-	.tit-wrap .tit { margin-bottom: 10px; }
-	
-	.sub-tit {
-		color: #8c929c;
-		font-size: 15px;
-		font-weight: 500;
-		margin: 40px 0 15px 10px;
-		float: left;
-	}
-	
-	.tit-right {
-		position: absolute;
-		right: 0;
-		bottom: 7px;
-	}
-	
-	.p-txt {
-		color: #8c929c;
-		font-size: 13px;
-		font-weight: 300;
-	}
-	
-	.table-list {
-	    width: 100%;
-		padding: 0 0 0 0;
-		background-color: #fff;
-		box-shadow: 2px 2px 2px rgba(220, 225, 232, 0.28);
-		overflow: hidden;
-	}
-	
-	.table-body { background-color: #fff; }
-	.table-row:not(:last-child) { border-bottom: 1px solid #eee; }
-	.table-row { width: 100%; }
-	
-	.table-col {
-		vertical-align: middle;
-		color: #333;
-		padding: 15px 20px 15px 20px;
-		height: 70px;
-		width: 432px;
-	}
-
-	.table-col-tit {
-		font-size: 13px;
-		color: #888;
-		width: 123px;
-		letter-spacing: -0.15em;
-		padding: 15px 10px 15px 20px;
-		vertical-align: middle;
-	}
-	
-	.input-wrap {
-		width: 100%;
-		border: #ddd solid 1px;
-		border-radius: 3px;
-		display: inline-block;
-		vertical-align: middle;
-		position: relative;
-		background-color: #fafafa;
-	}
-	
-		
-	.input-wrap > input {
-		border: 0;
-		background-color: transparent;
-		box-shadow: none;
-		color: #333;
-		font-size: 15px;
-		font-weight: 400;
-		box-sizing: border-box;
-		display: block;
-		width: 100%;
-		padding: 0 13px;
-    }
-	
-	.input-wrap input[type=text], 
-	.input-wrap input[type=password] {
-		height: 38px;
-	}
-	
-	
-	.input-group__id {
-		display: table;
-		border-spacing: 5px 0;
-		width: calc(100% + 10px);
-	}
-
-	.info-manage__btn-id {
-		width: 92px;
-		text-align: center;
-		background-color: #8c929c;
-		line-height: 1em;
-		font-size: 13px;
-		font-weight: 400;
-		padding: 13px 12px;
-		color: #fff;
-		letter-spacing: -0.06em;
-		margin-left: 5px;
-		border-radius: 3px;
-	}
-	
-	.input-group__id > .input-wrap { width: 295px; }
-	.color_red { color: #e93d3d; }
-	.bg_dark_grey { background-color: #484848; color: white; }
-	.bg_blu { background-color: #349eff; color: white;}
-	.nsdow:focus { box-shadow: none; }
-	
-	/*  */
-	.introduce1 > h4 {
-		color: #484848;
-		font-weight: 500;
-		padding-bottom: 20px;
-	}
-	
-	.room_service {
-		padding: 25px 0;
-		border: 1px solid #edeceb;
-	}
-	
-	.room_service_list {
-		display: table;
-		width: 100%;
-		table-layout: fixed;
-	}
-	
-	.room_service_list > li {
-		display: table-cell;
-		vertical-align: top;
-		position: relative;
-		border-right: 1px solid #edeceb;
-	}
-	
-	.room_service_list > li > h5 {
-		padding: 0 25px 20px;
-		font-size: 18px;
-		color: #000;
-	}
-	
-	.room_service_list > li > .chk_list > .disabled {
-		text-decoration: line-through;
-	   	color: #e0e0e0;
-	}
-	
-	.chk_list > .disabled > i {
-		color: #e0e0e0;
-	}
-	
-	.room_service_list > li > .chk_list > li {
-		float: none;
-		width: auto;
-		border: none;
-		padding: 7px 0 7px 25px;
-		color: #888;
-		font-size: 14px;
-		font-weight: 400;
-	}
-	
-	.room_service_list > li:last-child { border-right: none; }
-	.chk_list > li > i { color: #42c3bf; }
-	
-	.chk_list > li > label { margin-bottom: 0; }
-	
-	/* input[type="checkbox"] { display:none; } */
-	
-</style>
-
-<div id="container">
+<div id="container_wrap">
 	<div id="contents" class="container">
     	<div class="">
     		<div class="tit-wrap">
@@ -262,11 +51,37 @@
     					</tr>
     					
     					<tr class="table-row">
-    						<th class="table-col table-col-tit">숙소 소개</th>
+    						<th class="table-col table-col-tit">숙소 소개&nbsp;&nbsp;<b class="color_red">*</b></th>
     						<td class="table-col" colspan="3">
     							<textarea class="input-wrap" style="height:200px; font-size:12px; padding: 5px;" placeholder="숙소를 소개해주세요."></textarea>
     						</td>
     					</tr>
+    					
+    					<tr class="table-row">
+    						<th class="table-col table-col-tit">체크인&nbsp;&nbsp;<b class="color_red">*</b></th>
+    						<td class="table-col">
+    							<span class="input-wrap">
+	    							<input type="text">
+    							</span>
+    						</td>
+    						
+    						<th class="table-col table-col-tit">체크아웃&nbsp;&nbsp;<b class="color_red">*</b></th>
+    						<td class="table-col">
+    							<span class="input-wrap">
+	    							<input type="text">
+    							</span>
+    						</td>
+    					</tr>
+    					
+    					<tr class="table-row">
+    						<th class="table-col table-col-tit">소등시간&nbsp;&nbsp;<b class="color_red">*</b></th>
+    						<td class="table-col">
+    							<span class="input-wrap">
+	    							<input type="text">
+    							</span>
+    						</td>
+    					</tr>
+    					
     				</tbody>
     			</table>
     			
@@ -305,9 +120,71 @@
     							</span>
     						</td>
     					</tr>
+    					
+    					<tr class="table-row">
+    						<th class="table-col table-col-tit">객실 사진&nbsp;&nbsp;<b class="color_red">*</b></th>
+    						<td class="table-col">
+    							<span class="input-group input-group__id">
+    								<span class="input-wrap">
+		    							<input type="text" readonly>
+    								</span>
+    								<button class="info-manage__btn-id">파일 선택</button>
+    							</span>
+    						</td>
+    						<th class="table-col table-col-tit"></th>
+    						<td class="table-col">
+    						</td>
+    					</tr>
+    					
+    					<tr class="table-row">
+    						<th class="table-col table-col-tit">객실&nbsp;&nbsp;<b class="color_red">*</b></th>
+    						<td class="table-col">
+    							<span class="input-wrap">
+	    							<input type="text">
+    							</span>
+    						</td>
+    						<th class="table-col table-col-tit">1박 단가&nbsp;&nbsp;<b class="color_red">*</b></th>
+    						<td class="table-col">
+    							<span class="input-wrap">
+	    							<input type="text">
+    							</span>
+    						</td>
+    					</tr>
+    					
+    					<!--  -->
+    					<tr class="table-row">
+    						<th class="table-col table-col-tit">남&nbsp;&nbsp;/&nbsp;&nbsp;여&nbsp;&nbsp;<b class="color_red">*</b></th>
+    						<td class="table-col">
+    							<span class="input-wrap">
+	    							<input type="text">
+    							</span>
+    						</td>
+    						<th class="table-col table-col-tit">정원&nbsp;&nbsp;<b class="color_red">*</b></th>
+    						<td class="table-col">
+    							<span class="input-wrap">
+	    							<input type="text">
+    							</span>
+    						</td>
+    					</tr>
+    					
+    					<tr class="table-row">
+    						<th class="table-col table-col-tit">객실 사진&nbsp;&nbsp;<b class="color_red">*</b></th>
+    						<td class="table-col">
+    							<span class="input-group input-group__id">
+    								<span class="input-wrap">
+		    							<input type="text" readonly>
+    								</span>
+    								<button class="info-manage__btn-id">파일 선택</button>
+    							</span>
+    						</td>
+    						<th class="table-col table-col-tit"></th>
+    						<td class="table-col">
+    						</td>
+    					</tr>
+    					<!--  -->
     				</tbody>
     			</table>
-    			
+    			    			
     			<div class="tit-wrap">
     				<h4 class="sub-tit">부가시설 및 서비스</h4>
     			</div>

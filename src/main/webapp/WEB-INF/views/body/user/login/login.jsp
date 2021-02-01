@@ -1,60 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!-- <script src="resources/data-components/user/login.js"></script> -->
 
-
-<style>
-	#container {
-		padding-top: 50px;
-		padding-bottom: 50px;
-		clear: both;
-	}
-	
-	.wcenter {
-		position: relative;
-		max-width: 50%;
-		margin: 0 auto;
-		padding: 0;
-	}
-	
-	.login_bx {
-		margin: 90px auto 90px;
-		border: 1px solid #eee;
-		padding: 30px 0;
-	}
-	
-	.login_form {
-		padding: 0px 85px;
-	}
-	
-	.form-control-basic {
-		display: block;
-		width: 100%;
-		height: 60px;
-		padding: 8px 29px;
-		border: 1px solid #eee;
-		border-radius: 4px;
-		color: #858585;
-	}
-	
-	.bg_blu { background-color: #349eff; color: white;}
-	
-	.login_form > form > .btn {
-		display: block;
-		width: 100%;
-		padding: 18px 25px;
-		font-size: 22px;
-	}
-	
-	.login_logo {
-		text-align: center;
-		display: block;
-	}
-	
-	.txt_right { text-align: right; }
-	.nsdow:focus { box-shadow: none; }
-	
-</style>
-
 <div class="container" id="container">
 	<div class="wcenter">
 		<div class="login_bx">

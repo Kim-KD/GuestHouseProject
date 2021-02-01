@@ -3,10 +3,10 @@
 <div id="container" class="container">
 	<div class="w1100">
 		<div class="sub_hd">
-			<h2>회원가입</h2>
+			<h2>정보 수정</h2>
 		</div>
 		<div class="term_hd">
-			<h3 class="sub_title">정보입력</h3>
+			<h3 class="sub_title">정보 수정</h3>
 		</div>
 		
 		<form class="join_frm">

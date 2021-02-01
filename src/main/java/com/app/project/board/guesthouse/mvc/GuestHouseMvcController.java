@@ -33,5 +33,9 @@ public class GuestHouseMvcController {
 	}
 	
 	// 게하 게시글 수정 page
+	@GetMapping("/gh_modify_page")
+	public String gh_modify_page() {
+		return "guest_house/common/gh_write/gh_modify";
+	}
 	
 }

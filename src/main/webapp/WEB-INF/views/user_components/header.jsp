@@ -1,11 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<title>게하모 | 게스트 하우스의 모든 것</title>
     
     <!-- Favicon -->
 	<link href="assets/img/icon.png" rel="shortcut icon"/>
+	<link rel="shortcut icon" type="image/x-icon" href="resources/assets/main/img/import/img/icon.png">
 	
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">

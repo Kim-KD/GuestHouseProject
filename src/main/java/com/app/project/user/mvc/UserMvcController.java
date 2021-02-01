@@ -44,11 +44,17 @@ public class UserMvcController {
 	}
 	
 	// 회원가입
-	@PostMapping("/join")
+	@GetMapping("/join")
 	public String join(UserBean userBean) {
 		svc.join(userBean);
-		
 		return "/";
+	}
+	
+	// 내정보
+	@GetMapping("/my_page")
+	public String my_page() {
+		
+		return "user/mypage/mypage";
 	}
 	
 	// 로그인
