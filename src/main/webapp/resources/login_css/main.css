@@ -357,7 +357,6 @@ table {
     margin-bottom: 0;
     min-height: 34px;
 }
-.text-center { text-align: center; }
 
 .wid-lg {
 	display: inline-block;
@@ -439,3 +438,54 @@ table {
 
 .chk_list > li > label { margin-bottom: 0; }
 /* 게시글 작성 및 수정 */
+
+/* 공지사항 페이지 */
+.basic_step {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	font-size: 16px;
+    line-height: 60px;
+    text-align: center;
+    /* hover: #349eff; */
+}
+
+.basic_step > li {
+	display: table-cell;
+	border: 1px solid #edeceb;
+	border-left: 0;
+}
+
+.basic_step > li > a {
+	color: #888;
+	display: block;
+}
+
+ul > .active > a {
+	background-color: #fa8072;
+	color: white !important;
+}
+
+.posts_total {
+	padding: 0 0 10px 0;
+	color: #808080;
+}
+
+.tb {
+	border-top: 2px solid #5b5b5b;
+	width: 100%;
+}
+
+.tb > thead > tr > th {
+	text-align: center;
+	background: #f7f7f7;
+    color: #484848;
+}
+
+.tb > thead > tr > th,
+.tb > tbody > tr > td {
+	padding: 15px;
+    border: 1px solid #edeceb;
+}
+
+/* 공지사항 페이지 */

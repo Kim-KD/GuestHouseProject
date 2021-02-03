@@ -29,7 +29,7 @@
 			
 			<!-- 오른쪽 게스트하우스 리스트 [s] -->
 			<div class="col-lg-9 col-md-9">
-				<div class="guestHouseTotal">
+				<div class="serch_total">
 					<h6 class="m-b-0">검색된 숙소 <strong>OO</strong>개</h6>
 					<a href="gh_write_page">글작성</a>
 					<a href="gh_modify_page">글수정</a>
@@ -280,7 +280,7 @@
 					
 				</div>
 				<!-- 페이징 [s] -->
-				<div style="width:100%; text-align:center;" class="m-t-50 m-b-30">
+				<div style="width:100%;" class="text-center m-t-50 m-b-30">
 					<div style="display: inline-block; width:100%; text-align:center;">
 						<a href="javascript:void(0);" style="display: inline-block;" class="m-r-20">이전</a>
 						<div style="display: inline-block;">

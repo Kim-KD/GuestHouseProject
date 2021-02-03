@@ -1,72 +1,79 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
-<meta charset="UTF-8">
-<style>
-#findIdAndPwd{padding: 100px}
-#sendFindNum{margin-left: 44%; padding: 10px}
-</style>
-<script src="resources/data-components/user/find_info.js"></script>
-	<section class="site-section" id="findIdAndPwd">
-      <div class="container">
-        <div class="row">
-        <div class="col-lg-6">
-            <h2 class="mb-4">아이디 찾기</h2>
-            <form class="p-4 border rounded" id="idFrm">
-              <div class="row form-group">
-                <div class="col-md-12 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">E-mail</label>
-                  <span id="id_email_msg"></span>
-                  <input type="text" id="id_user_email" name="user_email" class="form-control" placeholder="E-mail 입력">
-                </div>
-              </div>
-              <div class="row form-group mb-4">
-                <div class="col-md-12 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">이름</label>
-                  <span id="id_name_msg"></span>
-                  <input type="text" id="user_name" name="user_name" class="form-control" placeholder="이름 입력">
-                </div>
-              </div>
-              <div class="row form-group">
-                <div class="col-md-12"><br>
-                  <button type="button" id="findIdBtn" class="btn px-4 btn-primary text-white">아이디 찾기</button>
-                </div>
-              </div>
-            </form>
-          </div>
-          
-          <div class="col-lg-6 mb-5">
-            <h2 class="mb-4">비밀번호 찾기</h2>
-            <form class="p-4 border rounded" id="pwdFrm">
-              <div class="row form-group">
-                <div class="col-md-12 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">아이디</label>
-                  <span id="pwd_id_msg"></span>
-                  <input type="text" id="user_id" name="user_id" class="form-control" placeholder="아이디 입력">
-                </div>
-              </div>
-              <div class="row form-group">
-                <div class="col-md-12 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">E-mail</label>
-                  <span id="pwd_email_msg"></span>
-                  <input type="text" id="pwd_user_email" name="user_email" class="form-control" placeholder="E-mail 입력">
-                </div>
-              </div>
-              <div class="row form-group mb-4">
-                <div class="col-md-12 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">인증번호</label>
-                  <span id="pwd_num_msg"></span>
-                  <input type="text" id="find_num" name="find_num" class="form-control" placeholder="인증번호 입력">
-                </div>
-              </div>
-              <div class="row form-group">
-                <div class="col-md-12"><br>
-                  <button type="button" id="findPwdBtn" class="btn px-4 btn-primary text-white">비밀번호 찾기</button>
-                  <button type="button" id="sendFindNum">인증번호 받기</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+<div id="container" class="container">
+	<div class="w1100">
+		<div class="sub_hd">
+			<h2>아이디 · 비밀번호 찾기</h2>
+		</div>
+
+		<form class="join_frm">
+			<p class="m-t-35 m-b-15">아이디 찾기</p>
+			<table class="tb_frm">
+				<colgroup>
+					<col style="width:155px"><col>
+				</colgroup>
+				
+				<tbody>
+					<tr>
+						<th>이름</th>
+						<td>
+							<input type="text" class="form-control-input wid-lg" placeholder="이름을 입력해주세요.">
+						</td>
+					</tr>
+					
+					<tr>
+						<th>이메일</th>
+						<td>
+							<input type="text" class="form-control-input wid-mid" placeholder="등록하신 이메일을 입력해주세요.">
+							<span>@</span>
+							<input type="text" class="form-control-input wid-mid">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<div class="text-center m-t-25">
+				<button class="btn bg_blu btn-lg nsdow">아이디 찾기</button>
+				<button class="btn bg_dark_grey btn-lg m-l-5 nsdow">취소</button>
+			</div>
+		</form>
+
+		<form class="join_frm p-t-40">
+			<p class="m-t-35 m-b-15">비밀번호 찾기</p>
+			<table class="tb_frm">
+				<colgroup>
+					<col style="width:155px"><col>
+				</colgroup>
+				
+				<tbody>
+					<tr>
+						<th>아이디</th>
+						<td>
+							<input type="text" class="form-control-input wid-lg" placeholder="이름을 입력해주세요.">
+						</td>
+					</tr>
+					<tr>
+						<th>이메일</th>
+						<td>
+							<input type="text" class="form-control-input wid-mid" placeholder="등록하신 이메일을 입력해주세요.">
+							<span>@</span>
+							<input type="text" class="form-control-input wid-mid">
+							<button class="info-manage__btn-id">인증요청</button>
+						</td>
+					</tr>
+					<tr>
+						<th>인증번호</th>
+						<td>
+							<input type="text" class="form-control-input wid-lg" placeholder="인증번호를 입력해주세요.">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<div class="text-center m-t-25">
+				<button class="btn bg_blu btn-lg nsdow">비밀번호 찾기</button>
+				<button class="btn bg_dark_grey btn-lg m-l-5 nsdow">취소</button>
+			</div>
+		</form>
+	</div>
+</div>

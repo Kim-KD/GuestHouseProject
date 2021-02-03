@@ -6,50 +6,62 @@
 
 	<!--  user base layout [s]  -->
 	<definition name="user_layout" template="/WEB-INF/views/base.jsp">
-        <put-attribute name="header" value="/WEB-INF/views/user_components/header.jsp" />
-        <put-attribute name="topNav" value="/WEB-INF/views/user_components/navbar/topNav.jsp" />
-        <put-attribute name="body" value="" />
-        <put-attribute name="footer" value="/WEB-INF/views/user_components/footer.jsp" />
-    </definition>
-    <!--  user base layout [e]  -->
+		<put-attribute name="header" value="/WEB-INF/views/user_components/header.jsp" />
+		<put-attribute name="topNav" value="/WEB-INF/views/user_components/navbar/topNav.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/user_components/footer.jsp" />
+	</definition>
+	<!--  user base layout [e]  -->
+	<!--  user body content [s]  -->
+	<definition name="user/*/*" extends="user_layout">
+		<put-attribute name="body" value="/WEB-INF/views/body/user/{1}/{2}.jsp" />
+	</definition>
+	<!--  user body content [e]  -->
     
-    <!--  user body content [s]  -->
-    <definition name="user/*/*" extends="user_layout">
-        <put-attribute name="body" value="/WEB-INF/views/body/user/{1}/{2}.jsp" />
-    </definition>
-    <!--  user body content [e]  -->
     
-    
-    <!--  write base layout [s]  -->
+	<!--  write base layout [s]  -->
 	<definition name="write_layout" template="/WEB-INF/views/base.jsp">
-        <put-attribute name="header" value="/WEB-INF/views/user_components/header.jsp" />
-        <put-attribute name="topNav" value="/WEB-INF/views/user_components/navbar/topNav.jsp" />
-        <put-attribute name="body" value="" />
-        <put-attribute name="footer" value="/WEB-INF/views/user_components/footer.jsp" />
-    </definition>
-    <!--  write base layout [e]  -->
-    
-    <!--  write body content [s]  -->
-    <definition name="guest_house/common/*/*" extends="write_layout">
-        <put-attribute name="body" value="/WEB-INF/views/body/guest_house/common/{1}/{2}.jsp" />
-    </definition>
-    <!--  write body content [e]  -->
+		<put-attribute name="header" value="/WEB-INF/views/user_components/header.jsp" />
+		<put-attribute name="topNav" value="/WEB-INF/views/user_components/navbar/topNav.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/user_components/footer.jsp" />
+	</definition>
+	<!--  write base layout [e]  -->
+	<!--  write body content [s]  -->
+	<definition name="guest_house/common/*/*" extends="write_layout">
+		<put-attribute name="body" value="/WEB-INF/views/body/guest_house/common/{1}/{2}.jsp" />
+	</definition>
+	<!--  write body content [e]  -->
 	
 	
-    <!--  base layout [s]  -->
-    <definition name="layout" template="/WEB-INF/views/base.jsp">
-        <put-attribute name="header" value="/WEB-INF/views/components/header.jsp" />
-        <put-attribute name="topNav" value="/WEB-INF/views/components/navbar/topNav.jsp" />
-        <put-attribute name="body" value="" />
-        <put-attribute name="footer" value="/WEB-INF/views/components/footer.jsp" />
-    </definition>
-    <!--  base layout [e]  -->
-
-    <!--  body content [s]  -->
-    <definition name="*/*/*" extends="layout">
-        <put-attribute name="body" value="/WEB-INF/views/body/{1}/{2}/{3}.jsp" />
-    </definition>
-    <!--  body content [e]  -->
+	<!--  service center base layout [s]  -->
+	<definition name="service_center_layout" template="/WEB-INF/views/base.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/user_components/header.jsp" />
+		<put-attribute name="topNav" value="/WEB-INF/views/user_components/navbar/topNav.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/user_components/footer.jsp" />
+	</definition>
+	<!--  service center base layout [e]  -->
+	<!--  service center body content [s]  -->
+	<definition name="service_center/*/*" extends="service_center_layout">
+		<put-attribute name="body" value="/WEB-INF/views/body/service_center/{1}/{2}.jsp" />
+	</definition>
+	<!--  service center body content [e]  -->
+	
+	
+	<!--  base layout [s]  -->
+	<definition name="layout" template="/WEB-INF/views/base.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/components/header.jsp" />
+		<put-attribute name="topNav" value="/WEB-INF/views/components/navbar/topNav.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/components/footer.jsp" />
+	</definition>
+	<!--  base layout [e]  -->
+	<!--  body content [s]  -->
+	<definition name="*/*/*" extends="layout">
+		<put-attribute name="body" value="/WEB-INF/views/body/{1}/{2}/{3}.jsp" />
+	</definition>
+	<!--  body content [e]  -->
 
 
 

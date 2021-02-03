@@ -659,9 +659,10 @@
 .container > .title_box { margin-left: -16px; }
 .tit_and_info_area { padding: 10px; }
 
-.guestHouseTotal {
+.serch_total {
 	padding: 0 0 10px 0;
 	border-bottom: 1px solid #eee;
+	color: #808080;
 }
 
 .post_list {

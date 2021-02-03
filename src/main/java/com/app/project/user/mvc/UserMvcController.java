@@ -57,6 +57,13 @@ public class UserMvcController {
 		return "user/mypage/mypage";
 	}
 	
+	// 아이디/비밀번호 찾기
+	@GetMapping("/find_info_page")
+	public String find_info_page() {
+		
+		return "user/find/find_info";
+	}
+	
 	// 로그인
 	@PostMapping("/login")
 	public ModelAndView login(@RequestParam("user_id") String user_id,
