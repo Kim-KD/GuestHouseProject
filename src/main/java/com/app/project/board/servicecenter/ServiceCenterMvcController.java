@@ -19,4 +19,16 @@ public class ServiceCenterMvcController {
 	public String notice_page() {
 		return "service_center/notice/notice";
 	}
+	
+	// 자주하는질문 page
+	@GetMapping("/questions_page") 
+	public String questions_page() {
+		return "service_center/notice/questions";
+	}
+	
+	// 문의 page
+	@GetMapping("/inquiry_page")
+	public String inquiry_page() {
+		return "service_center/notice/inquiry";
+	}
 }

@@ -53,7 +53,7 @@
     					<tr class="table-row">
     						<th class="table-col table-col-tit">숙소 소개&nbsp;&nbsp;<b class="color_red">*</b></th>
     						<td class="table-col" colspan="3">
-    							<textarea class="input-wrap" style="height:200px; font-size:12px; padding: 5px;" placeholder="숙소를 소개해주세요."></textarea>
+    							<textarea class="input-wrap" rows="10" style="font-size:12px; padding: 5px;" placeholder="숙소를 소개해주세요."></textarea>
     						</td>
     					</tr>
     					

@@ -723,10 +723,8 @@ h3 {
 .slicknav_menu .slicknav_nav {
   background: #fff;
   float: right;
-  margin-top: 0;
   padding: 0;
   width: 95%;
-  padding: 0;
   border-radius: 0px;
   margin-top: 5px;
   position: absolute;
@@ -734,6 +732,8 @@ h3 {
   right: 0;
   margin: auto;
   top: 11px;
+  /* 추가 */
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5) !important;
 }
 
 /* line 28, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_slick-nav.scss */

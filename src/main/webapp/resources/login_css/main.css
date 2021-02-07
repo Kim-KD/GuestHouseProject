@@ -17,6 +17,8 @@ input {
 	border: none;
 }
 
+textarea { resize: none !important; }
+
 #container {
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -336,7 +338,7 @@ table {
 }
 
 .tb_frm tr > * {
-	padding: 10px;
+	padding: 15px;
 	border: 1px solid #edeceb;
 }
 
@@ -346,7 +348,7 @@ table {
 	padding: 6px 15px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
-	color: #333;
+	color: #888;
 }
 
 .form-control-p {
@@ -453,7 +455,6 @@ table {
 .basic_step > li {
 	display: table-cell;
 	border: 1px solid #edeceb;
-	border-left: 0;
 }
 
 .basic_step > li > a {
@@ -486,6 +487,16 @@ ul > .active > a {
 .tb > tbody > tr > td {
 	padding: 15px;
     border: 1px solid #edeceb;
+}
+
+.no_style {
+	display: block;
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    border: 0;
+    background: none;
+    color: #888;
 }
 
 /* 공지사항 페이지 */

@@ -114,8 +114,7 @@
 			</table>
 			
 			<div class="text-center m-t-25">
-				<button class="btn bg_blu btn-lg nsdow">회원가입</button>
-				<button class="btn bg_dark_grey btn-lg m-l-5 nsdow">취소</button>
+				<button class="btn bg_blu btn-lg nsdow">회원정보 수정</button>
 			</div>
 		</form>
 	</div>

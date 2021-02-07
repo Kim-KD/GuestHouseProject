@@ -6,10 +6,10 @@
 	</div>
 	
 	<ul class="basic_step m-b-50">
-		<li class="active">
+		<li>
 			<a href="notice_page">공지사항</a>
 		</li>
-		<li>
+		<li class="active">
 			<a href="questions_page">자주하는 질문</a>
 		</li>
 		<li>

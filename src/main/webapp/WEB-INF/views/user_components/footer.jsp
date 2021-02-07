@@ -24,7 +24,7 @@
                                 <a href="#">회사소개</a> <br>
                                 <a href="#">파트너</a> <br>
                                 <a href="#">환불규정</a> <br>
-                                <a href="#">고객센터</a>
+                                <a href="notice_page">고객센터</a>
                             </p>
                         </div>
                     </div>

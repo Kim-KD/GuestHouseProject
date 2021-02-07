@@ -20,6 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="/project/resources/login_vendor/daterangepicker/daterangepicker.css">
 	<link rel="stylesheet" type="text/css" href="/project/resources/login_css/util.css">
 	<link rel="stylesheet" type="text/css" href="/project/resources/login_css/main.css">
+	<link rel="stylesheet" href="resources/assets/main/css/slicknav.css">
 	<link rel="stylesheet" href="resources/assets/main/css/bootstrap.min.css">
 	<link rel="stylesheet" href="resources/assets/main/css/style.css">
 	<link rel="stylesheet" href="resources/assets/main/css/custom.css">

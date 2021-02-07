@@ -280,7 +280,7 @@
 					
 				</div>
 				<!-- 페이징 [s] -->
-				<div style="width:100%;" class="text-center m-t-50 m-b-30">
+				<div style="width:100%;" class="text-center m-t-30 m-b-60">
 					<div style="display: inline-block; width:100%; text-align:center;">
 						<a href="javascript:void(0);" style="display: inline-block;" class="m-r-20">이전</a>
 						<div style="display: inline-block;">
