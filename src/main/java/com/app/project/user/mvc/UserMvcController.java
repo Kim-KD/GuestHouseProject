@@ -43,18 +43,34 @@ public class UserMvcController {
 		return "user/signup/cpn_sign_up";
 	}
 	
+	// 내정보 수정
+	@GetMapping("/my_modify")
+	public String my_modify() {
+		
+		return "user/mypage/my_modify";
+	}
+	
+	// 숙소 예약 내역
+	@GetMapping("/my_reservation")
+	public String my_reservation() {
+		
+		return "user/mypage/my_reservation";
+	}
+	
+	// 지난 예약 내역
+	@GetMapping("/my_past")
+	public String my_past() {
+		
+		return "user/mypage/my_past";
+	}
+
+
+	
 	// 회원가입
 	@GetMapping("/join")
 	public String join(UserBean userBean) {
 		svc.join(userBean);
 		return "/";
-	}
-	
-	// 내정보
-	@GetMapping("/my_page")
-	public String my_page() {
-		
-		return "user/mypage/mypage";
 	}
 	
 	// 아이디/비밀번호 찾기

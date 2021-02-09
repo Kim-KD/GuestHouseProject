@@ -25,7 +25,7 @@
 								<a href="sign_up" class="top-a-tag">회원가입</a>
 							</c:if> --%>
 							<a href="login_page" class="top-a-tag sp_active">로그인</a>
-							<a href="my_page" class="top-a-tag">내정보</a>
+							<a href="my_reservation" class="top-a-tag">내정보</a>
 							<a href="choice_sign_up" class="top-a-tag">회원가입</a>
 							<a href="notice_page" class="top-a-tag">고객센터</a>
 						</div>

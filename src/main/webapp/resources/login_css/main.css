@@ -498,5 +498,10 @@ ul > .active > a {
     background: none;
     color: #888;
 }
-
 /* 공지사항 페이지 */
+
+/* 예약 확인 페이지 */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.d_block { display: block;}
+/* 예약 확인 페이지 */
