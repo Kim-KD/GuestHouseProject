@@ -46,7 +46,7 @@
 				</td>
 				<td>2021-03-26</td>
 				<td>3박</td>
-				<td><a href="#">예약취소</a></td>
+				<td>예약취소</td>
 			</tr>
 			<tr>
 				<td class="text-left">

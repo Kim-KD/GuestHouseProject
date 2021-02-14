@@ -20,7 +20,7 @@
     			<table class="table-list">
     				<tbody class="table-body">
     					<tr class="table-row">
-    						<th class="table-col table-col-tit">회사명  <b class="color_red">*</b></th>
+    						<th class="table-col table-col-tit">파트너명  <b class="color_red">*</b></th>
     						<td class="table-col">
     							<span class="input-wrap">
 	    							<input type="text">

@@ -32,8 +32,18 @@
 						아이디 <b class="color_red">*</b>
 					</th>
 					<td>
-						<input type="text" class="form-control-input wid-lg" maxlength="12" placeholder="아이디">
+						<input type="text" class="form-control-input wid-lg" maxlength="12">
 						<p class="form-control-p">4~12자 이내로 영문 소문자, 숫자만 사용 가능합니다</p>
+					</td>
+				</tr>
+				
+				<tr>
+					<th>
+						닉네임 <b class="color_red">*</b>
+					</th>
+					<td>
+						<input type="text" class="form-control-input wid-lg">
+						<p class="form-control-p">특수문자 없이 입력해 주세요</p>
 					</td>
 				</tr>
 				
@@ -42,7 +52,7 @@
 						이름 <b class="color_red">*</b>
 					</th>
 					<td>
-						<input type="text" class="form-control-input wid-lg" placeholder="이름">
+						<input type="text" class="form-control-input wid-lg">
 						<p class="form-control-p">특수문자 없이 입력해 주세요</p>
 					</td>
 				</tr>
