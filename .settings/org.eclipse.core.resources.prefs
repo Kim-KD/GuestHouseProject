@@ -2,3 +2,4 @@ eclipse.preferences.version=1
 encoding//src/main/webapp/WEB-INF/views/body/user/login/login.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/views/body/user/mypage/my_past.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/views/body/user/signup/user_sign_up.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/components/navbar/topNav.jsp=UTF-8

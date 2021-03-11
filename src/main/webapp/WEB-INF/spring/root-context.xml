@@ -13,7 +13,7 @@
 	
 	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql:222.100.239.140:3307/GH_DB" />
+		<property name="url" value="jdbc:mysql://222.100.239.140:3307/GH_DB?serverTimezone=UTC" />
 		<property name="username" value="jerry" />
 		<property name="password" value="@Qwer34440318" />
 	</bean>

@@ -289,10 +289,11 @@
 								<ul class="chk_list">
 									<li>
 										<input type="checkbox">
-										<label>화장실(6개)</label>
+										<label>화장실</label>
 									</li>
 									<li>
-										<input type="checkbox"><label>샤워실(4개)</label>
+										<input type="checkbox">
+										<label>샤워실</label>
 									</li>
 									<li>
 										<input type="checkbox">
@@ -319,7 +320,8 @@
 										<label>바디샴푸</label>
 									</li>
 									<li>
-									<input type="checkbox"><label>1회용 칫솔</label>
+										<input type="checkbox">
+										<label>1회용 칫솔</label>
 									</li>
 								</ul>
 							</li>

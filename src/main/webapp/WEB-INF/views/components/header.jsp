@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,10 +28,5 @@
     <link rel="stylesheet" href="resources/assets/main/css/custom.css">
     <link rel="stylesheet" href="resources/assets/main/css/main.css">
     <link rel="stylesheet" href="/project/resources/login_css/util.css">
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
-    <!-- datepicker [s] -->
-	<link rel="stylesheet" href="resources/datepicker/css/bootstrap-datepicker3.css">
-	<!-- datepicker [e] -->
 </head>

@@ -6,28 +6,31 @@ import lombok.Setter;
 @Getter
 @Setter
 public class UserBean {
-	private String user_id;			// 아이디
-	private String user_status;		// 유저 구분
-	private String user_pwd;		// 비밀번호
-	private String user_name;		// 이름
-	private String user_email;		// 이메일
-	private String user_gender;		// 성별
-	private String user_job;		// 직업
-	private String user_radio;		// 연락처(무선)
-	private String user_cable;		// 연락처(유선)
-	private String user_create_day;	// 가입일
-	private String user_certify;	// 이메일 인증
-	private String change_pwd;		// 변경된 비밀번호
-	private String change_pwd_day;	// 비밀번호 변경일
-	private String login_fail_cnt;	// 로그인 실패 횟수
-	private String enabled;			// 계정 차단
-	private String find_num;		// 인증 번호
-	private String cpn_service_num;	// 사업자 번호
-	private String cpn_bank;		// 은행
-	private String cpn_account;		// 계좌번호
 	
-	public UserBean(String user_id, String user_pwd) {
-		this.user_id = user_id;
-		this.user_pwd = user_pwd;
-	}
+	private String USER_ID;			// 유저 아이디
+	private String STATUS;			// 유저 구분
+	private String USER_PW;			// 비밀번호
+	private String NICKNAME;		// 닉네임
+	private String NAME;			// 이름
+	private String PHONE_NUM;		// 핸드폰 번호
+	private String EMAIL;			// 이메일
+	private String GENDER;			// 성별
+	private String BIRTH;			// 생년월일
+	private String USER_JOB;		// 직업
+	private String CREATE_DATE;		// 가입일
+	private String EMAIL_STATUS;	// 이메일 인증
+	private String SECESSION;		// 회원 탈퇴 여부
+
+	private String PARTNER_NAME;	// 파트너명
+	private String TEL_NUM;			// 전화번호
+	private String BANK;			// 은행명
+	private String ACCOUNT_NUM;		// 계좌번호
+	private String ACCOUNT_HOLDER;	// 예금주
+	
+	
+	
+//	public UserBean(String USER_ID, String USER_PW) {
+//		this.USER_ID = USER_ID;
+//		this.USER_PW = USER_PW;
+//	}
 }

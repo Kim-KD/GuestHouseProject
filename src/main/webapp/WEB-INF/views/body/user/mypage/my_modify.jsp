@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <div class="w1100">
 	<div class="sub_hd">
 		<h2>정보 수정</h2>

@@ -63,14 +63,12 @@ public class UserMvcController {
 		
 		return "user/mypage/my_past";
 	}
-
-
 	
 	// 회원가입
-	@GetMapping("/join")
+	@PostMapping("/join")
 	public String join(UserBean userBean) {
 		svc.join(userBean);
-		return "/";
+		return "user/login/login";
 	}
 	
 	// 아이디/비밀번호 찾기
@@ -82,9 +80,8 @@ public class UserMvcController {
 	
 	// 로그인
 	@PostMapping("/login")
-	public ModelAndView login(@RequestParam("user_id") String user_id,
-								@RequestParam("user_pwd") String user_pwd) {
-		mav = svc.login(user_id, user_pwd);
+	public ModelAndView login() {
+		
 		return mav;
 	}
 	

@@ -11,24 +11,22 @@ public class UserService {
 	private UserDao dao;
 	private ModelAndView mav;
 	
+	// 아이디 중복체크
+	public int user_id_chk(String user_id) {
+		return dao.user_id_chk(user_id);
+	}
+	
+	// 닉네임 중복체크
+	public int nickname_chk(String nickname) {
+		return dao.nickname_chk(nickname);
+	}
+	
 	// 회원가입
 	public void join(UserBean userBean) {
-		
+		dao.join(userBean);
 	}
 	
 	// 로그인
-	public ModelAndView login(String user_id, String user_pwd) {
-		UserBean userBean = new UserBean(user_id, user_pwd);
-		UserBean loginData = dao.login(userBean);
-		mav = new ModelAndView();
-		
-		if(loginData != null) {
-			mav.addObject("loginData", loginData);
-			mav.setViewName("main/index");
-			return mav;
-		} else {
-			mav.setViewName("user/login");
-			return mav;
-		}
-	}
+	
+	
 }

@@ -181,6 +181,7 @@ textarea { resize: none !important; }
 .color_red { color: #e93d3d; }
 .nsdow:focus { box-shadow: none !important; }
 textarea:focus { outline: none; }
+.tb_frm > tbody > tr > td > .fas { line-height: 2 !important; }
 
 /* 로그인 */
 .wcenter {
@@ -348,16 +349,26 @@ table {
 	padding: 6px 15px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
-	color: #888;
+	
 }
 
-.form-control-p {
+.form-control-select {
 	display: inline-block;
-    margin: 0 0 0 10px;
-	padding-top: 7px;
-    padding-bottom: 7px;
-    margin-bottom: 0;
-    min-height: 34px;
+    padding: 6px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: 0;
+}
+
+.form-control-select2 {
+    display: inline-block;
+    padding: 6px 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: 0;
+    width: 100%;
+    background-color: #fafafa;
+    height: 40px;
 }
 
 .wid-lg {
@@ -367,22 +378,24 @@ table {
 
 .wid-mid { width: 255px !important; }
 .wid-sm { width: 115px; }
-/* 일반회원가입 */
 
-/* 일반회원가입 */	
-.info-manage__btn-id {
-	width: 92px;
-	text-align: center;
-	background-color: #8c929c;
-	line-height: 1em;
-	font-size: 13px;
-	font-weight: 400;
-	padding: 13px 12px;
-	color: #fff;
-	letter-spacing: -0.06em;
-	margin-left: 5px;
-	border-radius: 3px;
+.form-control-p {
+	display: inline-block;
+    margin: 0 0 0 10px;
+	padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 0;
 }
+
+.form-control-static {
+	padding-top: 7px;
+	padding-bottom: 7px;
+	margin: 0 6px;
+	min-height: 34px;
+}
+
+
+
 /* 일반회원가입 */
 
 /* 게시글 작성 및 수정 */
