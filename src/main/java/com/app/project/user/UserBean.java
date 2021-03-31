@@ -22,15 +22,15 @@ public class UserBean {
 	private String SECESSION;		// 회원 탈퇴 여부
 
 	private String PARTNER_NAME;	// 파트너명
+	private String PARTNER_NUM;		// 사업자등록번호
 	private String TEL_NUM;			// 전화번호
 	private String BANK;			// 은행명
 	private String ACCOUNT_NUM;		// 계좌번호
 	private String ACCOUNT_HOLDER;	// 예금주
 	
 	
-	
-//	public UserBean(String USER_ID, String USER_PW) {
-//		this.USER_ID = USER_ID;
-//		this.USER_PW = USER_PW;
-//	}
+	public UserBean(String USER_ID, String USER_PW) {
+		this.USER_ID = USER_ID;
+		this.USER_PW = USER_PW;
+	}
 }

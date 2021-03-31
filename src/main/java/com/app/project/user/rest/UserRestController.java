@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.app.project.user.UserService;
 
@@ -23,6 +24,12 @@ public class UserRestController {
 	@PostMapping("/nickname_chk")
 	public int nickname_chk(@RequestParam String nickname) {
 		return usvc.nickname_chk(nickname);
+	}
+	 
+	// 파트너명 중복체크
+	@PostMapping("/partner_name_chk")
+	public int partner_name_chk(@RequestParam String partner_name) {
+		return usvc.partner_name_chk(partner_name);
 	}
 	
 	

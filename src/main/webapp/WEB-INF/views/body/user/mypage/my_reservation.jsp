@@ -60,6 +60,18 @@
 				<td>3박</td>
 				<td style="color: #ff4a52;">예약취소</td>
 			</tr>
+			<tr>
+				<td class="text-left">
+					<a href="#">제주 구덕게스트하우스(제주 하이킹인)</a>
+					<span class="d_block">대한민국 > 제주</span>
+				</td>
+				<td>
+					<a href="#">1612862996079</a>
+				</td>
+				<td>2021-03-26</td>
+				<td>3박</td>
+				<td>대기중</td>
+			</tr>
 		</tbody>
 	</table>
 	

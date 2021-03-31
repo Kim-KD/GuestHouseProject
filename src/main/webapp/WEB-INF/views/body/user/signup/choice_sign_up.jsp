@@ -12,7 +12,7 @@
 			</a>
 			
 			<h3>파트너로 가입하기</h3>
-			<a href="cpn_sign_up_page" class="icon btn-partner nhover">
+			<a href="partner_sign_up_page" class="icon btn-partner nhover">
 				<i class="fas fa-handshake"></i>
 				파트너 회원가입
 			</a>

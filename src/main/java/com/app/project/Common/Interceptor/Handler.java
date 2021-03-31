@@ -36,14 +36,14 @@ public class Handler extends HandlerInterceptorAdapter {
                 if (!request.getServletPath().equals("/")) {
                     response.setContentType("text/html; charset=UTF-8");
                     PrintWriter out = response.getWriter();
-                    out.println("<script>alert(' 회원데이터가 존재하지않습니다.\\n 로그인페이지로 이동합니다.'); location.href='/login';</script>");
+                    out.println("<script>alert(' 회원데이터가 존재하지않습니다.\\n 로그인페이지로 이동합니다.'); location.href='/login_page';</script>");
                     out.flush();
                     out.close();
                     return false;
                 } else {
                     response.setContentType("text/html; charset=UTF-8");
                     PrintWriter out = response.getWriter();
-                    out.println("<script>location.href='/login';</script>");
+                    out.println("<script>location.href='/login_page';</script>");
                     out.flush();
                     out.close();
                     return false;

@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!-- 헤더 [s] -->
 <header>
@@ -8,23 +9,19 @@
 				<div class="row align-items-center">
 					<div class="col-md-12 d-none d-md-block">
 						<div class="social_wrap d-flex align-items-center justify-content-end">
-							<%-- <c:if test="${login_member.member_id! = null }">
-								<a href="user_list" id="adminBtn" class="register">관리자 페이지로</a>&nbsp;&nbsp;&nbsp;
-								<a href="profile">${loginId}님 환영합니다.</a>&nbsp;&nbsp;&nbsp;
-								<a href="javascript:void(0);" id="logoutBtn" class="register">로그아웃</a>
+							<c:if test="${userData.USER_ID != null}">
+								<div class="top-a-tag">
+									<span class="top_user_id">${userData.USER_ID}</span>님 반갑습니다.
+								</div>
+								<a href="my_reservation" class="top-a-tag">내정보</a>
+								<a href="logout" class="top-a-tag">로그아웃</a>
+								<a href="notice_page" class="top-a-tag">고객센터</a>
 							</c:if>
-							<c:if test="${login_member.member_id! = null }">
-								<a href="profile">${loginId}님 환영합니다.</a>&nbsp;&nbsp;&nbsp;
-								<a href="javascript:void(0);" id="logoutBtn" class="register">로그아웃</a>
+							<c:if test="${userData.USER_ID == null}">
+								<a href="login_page" class="top-a-tag sp_active">로그인</a>
+								<a href="choice_sign_up" class="top-a-tag">회원가입</a>
+								<a href="notice_page" class="top-a-tag">고객센터</a>
 							</c:if>
-							<c:if test="${login_member.member_id! = null }">
-								<a href="login" class="top-a-tag sp_active">로그인</a>
-								<a href="sign_up" class="top-a-tag">회원가입</a>
-							</c:if> --%>
-							<a href="login_page" class="top-a-tag sp_active">로그인</a>
-							<a href="my_reservation" class="top-a-tag">내정보</a>
-							<a href="choice_sign_up" class="top-a-tag">회원가입</a>
-							<a href="notice_page" class="top-a-tag">고객센터</a>
 						</div>
 					</div>
 				</div>
@@ -80,14 +77,6 @@
 						<a href="javascript:void(0);" class="searchTag">지역</a>
 					</div>
 				</div>
-				<!-- 모바일 -->
-				<!-- <div class="col-lg-6 d-lg-none">
-					<div class="section_title text-left mb_70">
-						<a href="javascript:void(0);" class="searchTag_m sp_active">숙소</a>
-						<a href="javascript:void(0);" class="searchTag_m">관광</a>
-						<a href="javascript:void(0);" class="searchTag_m">지역</a>
-					</div>
-				</div> -->
 			</div>
 			<div class="row justify-content-center align-items-center">
 				<div class="col-lg-12">

@@ -17,6 +17,10 @@ input {
 	border: none;
 }
 
+input::placeholder {
+	font-size: 13px;
+}
+
 textarea { resize: none !important; }
 
 #container {
@@ -286,7 +290,7 @@ textarea:focus { outline: none; }
 .nhover:hover { color: #ffffff !important; }
 /* 회원가입 선택 */
 
-/* 일반회원가입 */
+/* 회원가입 */
 table {
 	color: #888;
 	font-weight: 400;
@@ -394,9 +398,15 @@ table {
 	min-height: 34px;
 }
 
-
-
-/* 일반회원가입 */
+.warning_msg {
+    display: block;
+    position: absolute;
+    font-size: 10px;
+    line-height: normal;
+    text-align: right;
+    width: 26%;
+}
+/* 회원가입 */
 
 /* 게시글 작성 및 수정 */
 .introduce1 > h4 {
@@ -518,3 +528,7 @@ ul > .active > a {
 .text-left { text-align: left; }
 .d_block { display: block;}
 /* 예약 확인 페이지 */
+
+div > .top_user_id {
+	color: #ff4a52;
+}

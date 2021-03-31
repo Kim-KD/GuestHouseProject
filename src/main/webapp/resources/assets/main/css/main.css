@@ -221,7 +221,7 @@
 	width: 60%;
 	vertical-align: middle;
 }
-/*  */
+
 .calendar_box {
 	position: relative;
 	border-radius: 2.5px;
@@ -916,3 +916,7 @@
 	vertical-align: middle;
 }
 /* 리스트 */
+
+div > .top_user_id {
+	color: #ff4a52;
+}

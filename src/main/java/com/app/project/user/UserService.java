@@ -21,12 +21,35 @@ public class UserService {
 		return dao.nickname_chk(nickname);
 	}
 	
-	// 회원가입
-	public void join(UserBean userBean) {
-		dao.join(userBean);
+	// 파트너명 중복체크
+	public int partner_name_chk(String partner_name) {
+		return dao.partner_name_chk(partner_name);
+	}
+	
+	// 유저 회원가입
+	public void user_join(UserBean userBean) {
+		dao.user_join(userBean);
+	}
+	
+	// 파트너 회원가입
+	public void partner_join(UserBean userBean) {
+		dao.partner_join(userBean);
 	}
 	
 	// 로그인
-	
-	
+	public ModelAndView login(String USER_ID, String USER_PW) {
+		mav = new ModelAndView();
+		UserBean userBean = new UserBean(USER_ID, USER_PW);
+		UserBean userData = dao.login(userBean);
+
+		if(userData != null) {
+			mav.addObject("userData", userData);
+			mav.setViewName("main/index/index");
+			return mav;
+		} else {
+			mav.addObject("msg", "아이디나 비밀번호를 확인하세요.");
+			mav.setViewName("user/login/login");
+			return mav;
+		}
+	}
 }

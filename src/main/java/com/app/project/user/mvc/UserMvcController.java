@@ -7,12 +7,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.app.project.user.UserBean;
 import com.app.project.user.UserService;
 
 @Controller
+@SessionAttributes("userData")
 public class UserMvcController {
 	
 	@Autowired
@@ -38,10 +40,46 @@ public class UserMvcController {
 	}
 	
 	// 기업 회원가입 page
-	@GetMapping("/cpn_sign_up_page")
-	public String cpn_sign_up_page() {
-		return "user/signup/cpn_sign_up";
+	@GetMapping("/partner_sign_up_page")
+	public String partner_sign_up_page() {
+		return "user/signup/partner_sign_up";
 	}
+	
+	// 유저 회원가입
+	@PostMapping("/user_join")
+	public String user_join(UserBean userBean) {
+		svc.user_join(userBean);
+		return "user/login/login";
+	}
+	
+	// 파트너 회원가입
+	@PostMapping("/partner_join")
+	public String partner_join(UserBean userBean) {
+		svc.partner_join(userBean);
+		return "user/login/login";
+	}
+	
+	// 로그인
+	@PostMapping("/login")
+	public ModelAndView login(@RequestParam("user_id") String user_id, 
+								@RequestParam("user_pw") String user_pw) {
+		mav = svc.login(user_id, user_pw);
+		return mav;
+	}
+	
+	// 로그아웃
+	@GetMapping("/logout")
+	public String logout(HttpSession session) {
+		session.invalidate();
+		return "redirect:/";
+	}
+	
+	
+	
+	
+	
+	
+	
 	
 	// 내정보 수정
 	@GetMapping("/my_modify")
@@ -60,15 +98,7 @@ public class UserMvcController {
 	// 지난 예약 내역
 	@GetMapping("/my_past")
 	public String my_past() {
-		
 		return "user/mypage/my_past";
-	}
-	
-	// 회원가입
-	@PostMapping("/join")
-	public String join(UserBean userBean) {
-		svc.join(userBean);
-		return "user/login/login";
 	}
 	
 	// 아이디/비밀번호 찾기
@@ -76,20 +106,6 @@ public class UserMvcController {
 	public String find_info_page() {
 		
 		return "user/find/find_info";
-	}
-	
-	// 로그인
-	@PostMapping("/login")
-	public ModelAndView login() {
-		
-		return mav;
-	}
-	
-	// 로그아웃
-	@GetMapping("/logout")
-	public String logout(HttpSession session) {
-		session.invalidate();
-		return "redirect:/";
 	}
 	
 }

@@ -4,9 +4,9 @@
 
 <mapper namespace="User_Mapper">
 	
-	<!-- 아이디 중복체크 -->
+	<!-- 유저 아이디 중복체크 -->
 	<select id="user_id_chk" resultType="int">
-		select count(*) from USER_DATA where USER_ID = #{USER_ID}
+		select count(*) from USER_DATA u, PARTNER_DATA p where u.USER_ID = #{USER_ID} or p.USER_ID = #{USER_ID}
 	</select>
 	
 	<!-- 닉네임 중복체크 -->
@@ -14,13 +14,33 @@
 		select count(*) from USER_DATA where NICKNAME = #{NICKNAME}
 	</select>
 	
-	<!-- 회원가입 -->
-	<insert id="join" parameterType="user">
+	<!-- 파트너명 중복체크 -->
+	<select id="partner_name_chk" resultType="int">
+		select count(*) from PARTNER_DATA where PARTNER_NAME = #{PARTNER_NAME}
+	</select>
+	
+	<!-- 유저 회원가입 -->
+	<insert id="user_join" parameterType="user">
 		insert into USER_DATA
 		(USER_ID, STATUS, USER_PW, NICKNAME, NAME, PHONE_NUM, EMAIL, GENDER, BIRTH, USER_JOB, CREATE_DATE, EMAIL_STATUS, SECESSION)
 		values
 		(#{USER_ID}, #{STATUS}, #{USER_PW}, #{NICKNAME}, #{NAME}, #{PHONE_NUM}, #{EMAIL}, #{GENDER}, #{BIRTH}, #{USER_JOB}, 
 		now(), 'N', 'N')
 	</insert>
+	
+	<!-- 파트너 회원가입 -->
+	<insert id="partner_join" parameterType="user">
+		insert into PARTNER_DATA
+		(USER_ID, STATUS, USER_PW, PARTNER_NUM, PARTNER_NAME, NAME, EMAIL, GENDER, PHONE_NUM, TEL_NUM, 
+		 BANK, ACCOUNT_NUM, ACCOUNT_HOLDER, CREATE_DATE, EMAIL_STATUS, SECESSION)
+		values
+		(#{USER_ID}, #{STATUS}, #{USER_PW}, #{PARTNER_NUM}, #{PARTNER_NAME}, #{NAME}, #{EMAIL}, #{GENDER}, #{PHONE_NUM}, #{TEL_NUM}, 
+		 #{BANK}, #{ACCOUNT_NUM}, #{ACCOUNT_HOLDER}, now(), 'N', 'N')
+	</insert>
+	
+	<select id="login" resultType="user" statementType="CALLABLE">
+		{ CALL GH_DB.SYS_LOGIN(#{USER_ID, mode=IN, jdbcType=VARCHAR}, #{USER_PW, mode=IN, jdbcType=VARCHAR}) }
+	</select>
+	
 	
 </mapper>
