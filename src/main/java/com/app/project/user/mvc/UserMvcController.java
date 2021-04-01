@@ -67,13 +67,6 @@ public class UserMvcController {
 		return mav;
 	}
 	
-	// 로그아웃
-	@GetMapping("/logout")
-	public String logout(HttpSession session) {
-		session.invalidate();
-		return "redirect:/";
-	}
-	
 	
 	
 	
