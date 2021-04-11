@@ -35,7 +35,7 @@
    						<th class="table-col table-col-tit">사업자등록번호  <b class="color_red">*</b></th>
    						<td class="table-col">
    							<span class="input-wrap">
-    							<input type="text" name="PARTNER_NUM" id="partner_num">
+    							<input type="number" name="PARTNER_NUM" id="partner_num">
    							</span>
    							<p id="valid_partner_num" class="warning_msg"></p>
    						</td>
@@ -103,14 +103,14 @@
    						<th class="table-col table-col-tit">핸드폰 번호  <b class="color_red">*</b></th>
    						<td class="table-col">
    							<span class="input-wrap">
-    							<input type="text" name="PHONE_NUM" id="phone_num" placeholder="예) 01012345678">
+    							<input type="number" name="PHONE_NUM" id="phone_num" placeholder="예) 01012345678">
    							</span>
    							<p id="valid_phone_num" class="warning_msg"></p>
    						</td>
    						<th class="table-col table-col-tit">전화번호</th>
    						<td class="table-col">
    							<span class="input-wrap">
-    							<input type="text" name="TEL_NUM" id="tel_num" placeholder="예) 021234567">
+    							<input type="number" name="TEL_NUM" id="tel_num" placeholder="예) 021234567">
    							</span>
    							<p id="valid_tel_num" class="warning_msg"></p>
    						</td>
@@ -135,7 +135,7 @@
    						<th class="table-col table-col-tit">계좌번호  <b class="color_red">*</b></th>
    						<td class="table-col">
    							<span class="input-wrap">
-    							<input type="text" name="ACCOUNT_NUM" id="account_num">
+    							<input type="number" name="ACCOUNT_NUM" id="account_num">
    							</span>
    							<p id="valid_account_num" class="warning_msg"></p>
    						</td>

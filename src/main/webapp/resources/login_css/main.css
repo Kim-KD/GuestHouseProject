@@ -12,6 +12,16 @@ input[type=password] {
 	font-family: sans-serif !important;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-wrap > input[type="number"] {
+    height: 38px;
+}
+
 input {
 	outline: none;
 	border: none;

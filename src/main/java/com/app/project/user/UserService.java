@@ -52,4 +52,12 @@ public class UserService {
 			return mav;
 		}
 	}
+	
+	// 내정보 수정
+	public int info_update(UserBean userBean) {
+		return dao.info_update(userBean);
+	}
+	
+	
+	
 }

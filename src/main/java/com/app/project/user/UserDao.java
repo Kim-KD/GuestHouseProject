@@ -40,5 +40,9 @@ public class UserDao {
 		return sql.selectOne("User_Mapper.login", userBean);
 	}
 	
+	// 내정보 수정
+	public int info_update(UserBean userBean) {
+		return sql.update("User_Mapper.info_update", userBean);
+	}
 
 }

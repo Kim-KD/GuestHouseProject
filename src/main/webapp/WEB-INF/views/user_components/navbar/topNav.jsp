@@ -13,7 +13,7 @@
 								<div class="top-a-tag">
 									<span class="top_user_id">${userData.USER_ID}</span>님 반갑습니다.
 								</div>
-								<a href="my_reservation" class="top-a-tag">내정보</a>
+								<a href="my_reservation_page" class="top-a-tag">내정보</a>
 								<a href="logout" class="top-a-tag">로그아웃</a>
 								<a href="notice_page" class="top-a-tag">고객센터</a>
 							</c:if>

@@ -1,6 +1,5 @@
-// 로그인 실패 alert
 $(function() {
-	var msg = "${msg}";
+	var msg = $("#msg").val();
 	
 	if(!msg) {
 		return 0;

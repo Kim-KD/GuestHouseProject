@@ -1,15 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<script>
-$(function() {
-	var msg = "${msg}";
-	
-	if(!msg) {
-		return 0;
-	} else {
-		alert(msg);
-	}
-});
-</script>
+<script src="resources/data-components/login/login.js"></script>
 
 <div class="container" id="container">
 	<div class="wcenter">
@@ -17,6 +7,7 @@ $(function() {
 			<a href="index" class="login_logo m-t-10 m-b-40"><img src="resources/assets/main/img/import/img/logo.png"></a>
 			<div class="login_form">
 				<form action="login" method="post">
+					<input type="hidden" id="msg" value="${msg}" >
 					<input type="text" name="user_id" class="form-control-basic" placeholder="아이디를 입력하세요">
 					<input type="password" name="user_pw" class="form-control-basic m-t-10 m-b-10" placeholder="비밀번호를 입력하세요">
 					<div class="txt_right m-b-10">

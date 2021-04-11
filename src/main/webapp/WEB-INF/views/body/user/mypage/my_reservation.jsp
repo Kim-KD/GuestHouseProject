@@ -6,13 +6,13 @@
 	
 	<ul class="basic_step">
 		<li class="active">
-			<a href="my_reservation">진행중인 예약</a>
+			<a href="my_reservation_page">진행중인 예약</a>
 		</li>
 		<li>
-			<a href="my_past">지난 예약</a>
+			<a href="my_past_page">지난 예약</a>
 		</li>
 		<li>
-			<a href="my_modify">정보 수정</a>
+			<a href="my_info_modify_page">정보 수정</a>
 		</li>
 	</ul>
 	

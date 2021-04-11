@@ -73,11 +73,9 @@ function form_validation() {
 	var gender = $("#gender").val();
 	var phone_num = $("#phone_num").val();
 	var tel_num = $("#tel_num").val();
-	
 	var bank = $("#bank").val();
 	var account_num = $("#account_num").val();
 	var account_holder = $("#account_holder").val();
-	
 	var id_validation = $("#id_validation").val();
 	var partner_validation = $("#partner_validation").val();
 	
@@ -175,9 +173,6 @@ function form_validation() {
 	}
 }
 // 회원등록 폼 검증[e]
-
-// focusout [s]
-// focusout [e]
 
 // keyup, keydown 되었을때, 메세지 제거 [s]
 $(function(){

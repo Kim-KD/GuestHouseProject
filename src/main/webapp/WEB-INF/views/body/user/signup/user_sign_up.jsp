@@ -72,7 +72,7 @@
 							핸드폰 번호 <b class="color_red">*</b>
 						</th>
 						<td>
-							<input type="text" name="PHONE_NUM" id="phone_num" class="form-control-input wid-mid" placeholder="예) 01012345678">
+							<input type="number" name="PHONE_NUM" id="phone_num" class="form-control-input wid-lg" placeholder="예) 01012345678">
 							<p id="valid_phone_num" class="form-control-p"></p>
 						</td>
 					</tr>
@@ -82,10 +82,7 @@
 							이메일 <b class="color_red">*</b>
 						</th>
 						<td>
-							<input type="text" id="email1" class="form-control-input wid-mid"> 
-							<span class="form-control-static">@</span>
-							<input type="text" id="email2" class="form-control-input wid-mid">
-							<input type="hidden" name="EMAIL" id="email">
+							<input name="EMAIL" id="email" class="form-control-input wid-lg" placeholder="ex) guesthouse@naver.com">
 							<p id="valid_email" class="form-control-p"></p>
 						</td>
 					</tr>
@@ -109,13 +106,7 @@
 							생년월일 <b class="color_red">*</b>
 						</th>
 						<td>
-							<input type="text" id="birth1" class="form-control-input wid-sm" placeholder="ex) 1991">
-							<span class="form-control-static">년</span> 
-							<input type="text" id="birth2" class="form-control-input wid-sm m-l-10" placeholder="03">
-							<span class="form-control-static">월</span> 
-							<input type="text" id="birth3" class="form-control-input wid-sm m-l-10" placeholder="02">
-							<span class="form-control-static">일</span>
-							<input type="hidden" name="BIRTH" id="birth">
+							<input type="number" name="BIRTH" id="birth" class="form-control-input wid-lg" placeholder="ex) 19910302">
 							<p id="valid_birth" class="form-control-p"></p>
 						</td>
 					</tr>

@@ -38,9 +38,30 @@
 		 #{BANK}, #{ACCOUNT_NUM}, #{ACCOUNT_HOLDER}, now(), 'N', 'N')
 	</insert>
 	
+	<!-- 로그인 -->
 	<select id="login" resultType="user" statementType="CALLABLE">
 		{ CALL GH_DB.SYS_LOGIN(#{USER_ID, mode=IN, jdbcType=VARCHAR}, #{USER_PW, mode=IN, jdbcType=VARCHAR}) }
 	</select>
+	
+	<update id="info_update" statementType="CALLABLE">
+		{ CALL GH_DB.SYS_INFO_UPDATE(
+			#{USER_ID, mode=IN, jdbcType=VARCHAR},
+			#{STATUS, mode=IN, jdbcType=VARCHAR},
+			#{NICKNAME, mode=IN, jdbcType=VARCHAR},
+			#{NAME, mode=IN, jdbcType=VARCHAR},
+			#{PHONE_NUM, mode=IN, jdbcType=VARCHAR},
+			#{EMAIL, mode=IN, jdbcType=VARCHAR},
+			#{GENDER, mode=IN, jdbcType=VARCHAR},
+			#{BIRTH, mode=IN, jdbcType=VARCHAR},
+			#{USER_JOB, mode=IN, jdbcType=VARCHAR},
+			#{PARTNER_NAME, mode=IN, jdbcType=VARCHAR},
+			#{PARTNER_NUM, mode=IN, jdbcType=VARCHAR},
+			#{TEL_NUM, mode=IN, jdbcType=VARCHAR},
+			#{BANK, mode=IN, jdbcType=VARCHAR},
+			#{ACCOUNT_NUM, mode=IN, jdbcType=VARCHAR},
+			#{ACCOUNT_HOLDER, mode=IN, jdbcType=VARCHAR}
+		)}
+	</update>
 	
 	
 </mapper>

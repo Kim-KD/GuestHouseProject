@@ -35,7 +35,12 @@ function nickcheckbtn() {
 	var nickname = $("#nickname").val();
 	var regExp_nickname = /[~!@#$%^&*()_+|<>?:{}]/;
 	
-	if(regExp_nickname.test(nickname)) {
+	if(nickname == "") {
+		$("#valid_nickname").css("color", "#f30c43").addClass("fas fa-times").text(" 닉네임 입력해 주세요.");
+		$("#nickname").val("");
+		$("#nickname").focus();
+		return false;
+	} else if(regExp_nickname.test(nickname)) {
 		$("#valid_nickname").css("color", "#f30c43").addClass("fas fa-times").text(" 특수문자 없이 입력해 주세요.");
 		$("#nickname").val("");
 		$("#nickname").focus();
@@ -65,9 +70,6 @@ function nickcheckbtn() {
 
 // 회원등록 폼 검증[s]
 function form_validation() {
-	$("#email").val($("#email1").val() + "@" + $("#email2").val());
-	$("#birth").val($("#birth1").val() + $("#birth2").val() + $("#birth3").val());
-	
 	var user_id = $("#user_id").val();
 	var nickname = $("#nickname").val();
 	var name = $("#name").val();
@@ -141,23 +143,21 @@ function form_validation() {
 		return false;
 	} else if(!regExp_email.test(email)) {
 		$("#valid_email").css("color", "#f30c43").addClass("fas fa-times").text(" 이메일을 다시 입력해주세요.");
-		$("#email1").val("");
-		$("#email1").focus();
+		$("#email").val("");
+		$("#email").focus();
 		return false;
 	} else if(gender == "") {
 		$("#valid_gender").css("color", "#f30c43").addClass("fas fa-times").text(" 성별을 선택해주세요.");
 		return false;
 	} else if(!regExp_birth.test(birth)) {
 		$("#valid_birth").css("color", "#f30c43").addClass("fas fa-times").text(" 생년월일을 입력해주세요.");
-		$("#birth1").val("");
-		$("#birth2").val("");
-		$("#birth3").val("");
-		$("#birth1").focus();
+		$("#birth").val("");
+		$("#birth").focus();
 		return false;
 	} else if(birth == "") {
 		$("#valid_birth").css("color", "#f30c43").addClass("fas fa-times").text(" 생년월일을 입력해주세요.");
-		$("#birth1").val("");
-		$("#birth1").focus();
+		$("#birth").val("");
+		$("#birth").focus();
 		return false;
 	} else if(user_job == "") {
 		$("#valid_user_job").css("color", "#f30c43").addClass("fas fa-times").text(" 직업을 입력해주세요.");
@@ -254,14 +254,8 @@ $(function(){
 		}
 	});
 	
-	$("#email1").on("keyup keydown", function() {
-		if($("#email1").val().length > 0 || $("#email2").val().length > 0) {
-			$("#valid_email").empty().removeClass();
-			$("#valid_email").addClass("form-control-p");
-		}
-	});
-	$("#email2").on("keyup keydown", function() {
-		if($("#email2").val().length > 0) {
+	$("#email").on("keyup keydown", function() {
+		if($("#email").val().length > 0) {
 			$("#valid_email").empty().removeClass();
 			$("#valid_email").addClass("form-control-p");
 		}
@@ -272,20 +266,10 @@ $(function(){
 		$("#valid_gender").css("color", "#7A838B").addClass("form-control-p");
 	});
 	
-	$("#birth1").on("keyup keydown", function() {
-		if($("#birth1").val().length > 0) {
+	$("#birth").on("keyup keydown", function() {
+		if($("#birth").val().length > 0) {
 			$("#valid_birth").empty().removeClass();
 			$("#valid_birth").addClass("form-control-p");
-		}
-	});
-	$("#birth2").on("keyup keydown", function() {
-		if($("#birth2").val().length > 0) {
-			$("#valid_birth").empty().removeClass();
-		}
-	});
-	$("#birth3").on("keyup keydown", function() {
-		if($("#birth3").val().length > 0) {
-			$("#valid_birth").empty().removeClass();
 		}
 	});
 	
