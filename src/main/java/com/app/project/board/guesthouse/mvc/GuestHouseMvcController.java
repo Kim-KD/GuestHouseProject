@@ -1,13 +1,17 @@
 package com.app.project.board.guesthouse.mvc;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.app.project.user.UserService;
 
 @Controller
+@SessionAttributes("userData")
 public class GuestHouseMvcController {
 	
 	@Autowired
@@ -16,8 +20,16 @@ public class GuestHouseMvcController {
 	
 	// 게하 리스트 page
 	@GetMapping("/gh_list_page")
-	public String gh_list_page() {
-		return "guest_house/common/gh_list";
+	public ModelAndView gh_list_page(HttpSession session) {
+		mav = new ModelAndView();
+		if(session.getAttribute("userData.STATUS") == "P") {
+			mav.addObject("userData", session.getAttribute("userData.STATUS"));
+			mav.setViewName("guest_house/common/gh_list");
+			return mav;
+		} else {
+			mav.setViewName("guest_house/common/gh_list");
+			return mav;
+		}		
 	}
 	
 	// 게하 상세보기 page

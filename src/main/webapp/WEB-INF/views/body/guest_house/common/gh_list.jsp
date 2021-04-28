@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!-- 게스트하우스 리스트 [s] -->
 <section class="m-t-20 m-b-20">
@@ -22,6 +23,12 @@
 						<span class="stay_kind_img"><i class="fas fa-home"></i></span>
 						<span class="stay_kind">서귀포</span>
 					</div>
+					<c:if test="${userData.STATUS eq 'P'}">
+					<a class="tab_btn" href="gh_write_page">
+						<span class="stay_kind_img"><i class="fas fa-pen"></i></span>
+						<span class="stay_kind">글작성</span>
+					</a>
+					</c:if>
 				</div>
 			</div>
 			<!-- 왼쪽 사이드바 [e] -->
@@ -30,8 +37,6 @@
 			<div class="col-lg-9 col-md-9">
 				<div class="serch_total">
 					<h6 class="m-b-0">검색된 숙소 <strong>OO</strong>개</h6>
-					<a href="gh_write_page">글작성</a>
-					<a href="gh_modify_page">글수정</a>
 				</div>
 				<div class="tit_and_info_area">
 					<h3 class="m-b-0">숙소</h3>

@@ -863,17 +863,16 @@
 	text-align: left;
 	display: inline-block;
 	width: 280px;
-	border: 1px solid #f7f7f7;
 	background-color: #ffffff;
 	padding: 0;
-	height: 145px;
-	margin-bottom: 10px;
+	height: 197px;
 }
 
 .tab_btn_box_stay_list {
 	display: block;
 	vertical-align: bottom;
 	text-align: left;
+	border: 1px solid #f7f7f7;
 }
 
 .tab_btn {
@@ -886,9 +885,14 @@
 	color: rgb(72, 72, 72);
 	transition: all 0.3s ease 0s;
 	cursor: pointer;
+	border-bottom: 1px solid #f7f7f7
 }
 
-.tab_btn:hover { background-color: #f7f7f7; }
+.tab_btn_box_stay_list > .tab_btn:last-child {
+	border-bottom: none;
+}
+
+.tab_btn:hover { background-color: #ffe8e9; }
 
 .is_active {
 	background-color: #ff4a52;

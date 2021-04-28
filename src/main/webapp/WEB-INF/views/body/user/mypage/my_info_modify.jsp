@@ -7,21 +7,43 @@
 		<h2>정보 수정</h2>
 	</div>
 	
-	<ul class="basic_step">
-		<li>
-			<a href="my_reservation_page">진행중인 예약</a>
-		</li>
-		<li>
-			<a href="my_past_page">지난 예약</a>
-		</li>
-		<li class="active">
-			<a href="my_info_modify_page">정보 수정</a>
-		</li>
-	</ul>
-	
-	<div class="term_hd m-b-0i">
-		<h3 class="sub_title">정보 수정</h3>
-	</div>
+	<c:choose>
+		<c:when test="${userData.STATUS eq 'U'}">
+		<ul class="basic_step">
+			<li>
+				<a href="my_page1">진행중인 예약</a>
+			</li>
+			<li>
+				<a href="my_page2">지난 예약</a>
+			</li>
+			<li class="active">
+				<a href="my_info_modify_page">정보 수정</a>
+			</li>
+		</ul>
+		
+		<div class="term_hd m-b-0i">
+			<h3 class="sub_title">정보 수정</h3>
+		</div>
+		</c:when>
+		
+		<c:when test="${userData.STATUS eq 'P'}">
+		<ul class="basic_step">
+			<li>
+				<a href="my_page1">내가 쓴 글 보기</a>
+			</li>
+			<li>
+				<a href="my_page2">예약 내역</a>
+			</li>
+			<li class="active">
+				<a href="my_info_modify_page">정보 수정</a>
+			</li>
+		</ul>
+		
+		<div class="term_hd m-b-0i">
+			<h3 class="sub_title">정보 수정</h3>
+		</div>
+		</c:when>
+	</c:choose>
 	
 	<form class="join_frm" action="info_update" method="post">
 		<input type="hidden" id="partner_validation" value="1"/>
@@ -32,6 +54,35 @@
 		<input type="hidden" id="partner_name2" value="${userData.PARTNER_NAME}">
 		
 		<table class="tb_frm">
+			<colgroup>
+				<col style="width:155px"><col>
+			</colgroup>
+			
+			<tbody>
+				<tr>
+					<th>
+						아이디 <b class="color_red">*</b>
+					</th>
+					<td>
+						<p class="m-r-6 m-l-6 p-t-7 p-b-7">${userData.USER_ID}</p>
+					</td>
+				</tr>
+				
+				<tr>
+					<th>
+						비밀번호<b class="color_red">*</b>
+					</th>
+					<td>
+						<input type="password" name="USER_PW" id="user_pw" class="form-control-input wid-lg m-b-10" maxlength="32" placeholder="신규 비밀번호">
+						<p id="valid_password" class="form-control-p">특수문자 포함 8자이상 16자 이하로 입력해 주세요.</p><br>
+						<input type="password" id="user_pwchk" class="form-control-input wid-lg" maxlength="32" placeholder="비밀번호 확인">
+						<p id="valid_password2" class="form-control-p"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<table class="tb_frm m-t-25">
 			<colgroup>
 				<col style="width:155px"><col>
 			</colgroup>

@@ -196,6 +196,9 @@ textarea { resize: none !important; }
 .nsdow:focus { box-shadow: none !important; }
 textarea:focus { outline: none; }
 .tb_frm > tbody > tr > td > .fas { line-height: 2 !important; }
+.blue { color: #5db2ff; }
+.red { color: #ff4a52; }
+.green { color: #1bd61b; }
 
 /* 로그인 */
 .wcenter {

@@ -5,7 +5,6 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
@@ -84,12 +83,12 @@ public class UserMvcController {
 	}
 	
 	// 숙소 예약 내역 페이지
-	@GetMapping("/my_reservation_page")
-	public ModelAndView my_reservation_page(HttpSession session) {
+	@GetMapping("/my_page1")
+	public ModelAndView my_page1(HttpSession session) {
 		mav = new ModelAndView();
 		if(session.getAttribute("userData") != null) {
 			mav.addObject("userData", session.getAttribute("userData"));
-			mav.setViewName("user/mypage/my_reservation");
+			mav.setViewName("user/mypage/my_page1");
 			return mav;
 		} else {
 			mav.setViewName("main/index/index");
@@ -98,12 +97,12 @@ public class UserMvcController {
 	}
 	
 	// 지난 예약 내역 페이지
-	@GetMapping("/my_past_page")
-	public ModelAndView my_past_page(HttpSession session) {
+	@GetMapping("/my_page2")
+	public ModelAndView my_page2(HttpSession session) {
 		mav = new ModelAndView();
 		if(session.getAttribute("userData") != null) {
 			mav.addObject("userData", session.getAttribute("userData"));
-			mav.setViewName("user/mypage/my_past");
+			mav.setViewName("user/mypage/my_page2");
 			return mav;
 		} else {
 			mav.setViewName("main/index/index");
@@ -113,7 +112,7 @@ public class UserMvcController {
 	
 	// 내정보 수정
 	@PostMapping("/info_update")
-	public String my_info_modify(@ModelAttribute("userData") UserBean userBean, SessionStatus sessionStatus) {
+	public String my_info_modify(UserBean userBean, SessionStatus sessionStatus) {
 		svc.info_update(userBean);
 		sessionStatus.setComplete();
 		return "redirect:/";

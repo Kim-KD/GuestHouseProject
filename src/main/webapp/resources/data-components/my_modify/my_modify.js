@@ -93,6 +93,8 @@ function form_validation() {
 	var account_holder = $("#account_holder").val();	
 	var nickname_validation = $("#nickname_validation").val();
 	var partner_validation = $("#partner_validation").val();
+	var user_pw = $("#user_pw").val();
+	var user_pwchk = $("#user_pwchk").val();
 
 	// 정규식
 	var regExp_id = /^[a-z]+[a-z0-9]{5,19}$/g;
@@ -105,6 +107,30 @@ function form_validation() {
 	var regExp_partner_name = /[~!@#$%^&*()_+|<>?:{}]/;
 	var regExp_tel_num = /^\d{2,3}\d{3,4}\d{4}$/;
 	
+	if(user_pw != "" || user_pwchk != "") {
+		if(!regExp_pw.test(user_pw)) {
+			$("#valid_password").css("color", "#f30c43").addClass("fas fa-times").text(" 특수문자 포함 8자이상 16자 이하로 입력하세요.");
+			$("#user_pw").val("");
+			$("#user_pw").focus();
+			return false;
+		} else if(user_pw == null) {
+			$("#valid_password2").css("color", "#f30c43").addClass("fas fa-times").text(" 비밀번호확인을 입력해주세요.");
+			$("#user_pwchk").val("");
+			$("#user_pwchk").focus();
+			return false;
+		} else if(user_pwchk == null) {
+			$("#valid_password2").css("color", "#f30c43").addClass("fas fa-times").text(" 비밀번호를 입력해주세요.");
+			$("#user_pw").val("");
+			$("#user_pw").focus();
+			return false;
+		} else if(user_pw != user_pwchk) {
+			$("#valid_password2").css("color", "#f30c43").addClass("fas fa-times").text(" 비밀번호가 동일하지 않습니다.");
+			$("#user_pwchk").val("");
+			$("#user_pwchk").focus();
+			return false;
+		}
+		return false;
+	}
 	
 	if(status == "P") {
 		if(regExp_partner_name.test(partner_name)) {
@@ -222,6 +248,37 @@ function form_validation() {
 $(function() {
 	var nickname2 = "${userData.NICKNAME}";
 	var partner_name2 = "${userData.PARTNER_NAME}";
+	var regExp_pw = /^(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])(?=.*[0-9]).{8,16}$/;
+	
+	$("#user_pw").on("keyup keydown", function() {
+		if(!regExp_pw.test($("#user_pw").val())) {
+			$("#valid_password").css("color", "#f30c43").addClass("fas fa-times").text(" 특수문자 포함 8자이상 16자 이하로 입력하세요.");
+		} else {
+			$("#valid_password").removeClass();
+			$("#valid_password").css("color", "#57c1be").addClass("form-control-p fa fa-check").text(" 사용 가능한 비밀번호 입니다.");
+		}
+	});
+	$("#user_pwchk").on("keyup keydown", function() {
+		if($("#user_pw").val() != $("#user_pwchk").val()) {
+			$("#valid_password2").removeClass();
+			$("#valid_password2").css("color", "#f30c43").addClass("form-control-p fas fa-times").text(" 비밀번호가 동일하지 않습니다.");
+		} else {
+			$("#valid_password2").removeClass();
+			$("#valid_password2").css("color", "#57c1be").addClass("form-control-p fa fa-check").text(" 비밀번호가 동일합니다.");
+		}
+	});
+	$("#user_pw").on("keyup keydown", function() {
+		if($("#user_pw").val().length == 0) {
+			$("#valid_password").removeClass();
+			$("#valid_password").css("color", "#7A838B").addClass("form-control-p").text(" 특수문자 포함 8자이상 16자 이하로 입력해 주세요.");
+		}
+	});
+	$("#user_pwchk").on("keyup keydown", function() {
+		if($("#user_pwchk").val().length == 0) {
+			$("#valid_password2").empty().removeClass();
+			$("#valid_password2").addClass("form-control-p");
+		}
+	});
 	
 	$("#nickname").on("keyup keydown", function() {
 		nickname = $("#nickname").val();
