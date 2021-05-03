@@ -73,7 +73,7 @@
 				<div class="col-lg-6 d-md-block"> <!-- d-none -->
 					<div class="section_title text-left mb_70">
 						<a href="javascript:void(0);" class="searchTag sp_active">숙소</a>
-						<a href="javascript:void(0);" class="searchTag">관광</a>
+						<a href="javascript:void(0);" class="searchTag">트립</a>
 						<a href="javascript:void(0);" class="searchTag">지역</a>
 					</div>
 				</div>

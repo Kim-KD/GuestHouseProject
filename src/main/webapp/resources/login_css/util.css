@@ -2985,6 +2985,10 @@
 	bottom: 0px;
 }
 
+.footer_widget > ul > li > i {
+	width: 20px;
+}
+
 
 
 

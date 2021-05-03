@@ -36,7 +36,7 @@
 			<!-- 오른쪽 게스트하우스 리스트 [s] -->
 			<div class="col-lg-9 col-md-9">
 				<div class="serch_total">
-					<h6 class="m-b-0">검색된 숙소 <strong>OO</strong>개</h6>
+					<h6 class="m-b-0">검색된 숙소 <strong>${total}</strong>개</h6>
 				</div>
 				<div class="tit_and_info_area">
 					<h3 class="m-b-0">숙소</h3>

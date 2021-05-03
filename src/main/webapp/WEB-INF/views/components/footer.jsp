@@ -8,30 +8,57 @@
 					<div class="footer_widget">
 						<div class="footer_logo">
 							<a href="#">
-								<img src="resources/assets/main/img/import/img/logo.png" alt="게하모" style="width:150px;">
+								<img src="resources/assets/main/img/import/img/logo.png" alt="게하모">
 							</a>
 						</div>
-						<p>인천시 부평구 이규보로 79 주공뜨란채아파트 <br>
-							<a href="#">+8210 3444 0318</a> / <a href="#">w8230@naver.com</a>
-						</p>
-					</div>
-				</div>
-				<div class="col-xl-2 col-md-6 col-lg-2">
-					<div class="footer_widget">
-						<p>
-							<a href="#">회사소개</a> <br>
-							<a href="#">파트너</a> <br>
-							<a href="#">환불규정</a> <br>
-							<a href="notice_page">고객센터</a>
-						</p>
+						<ul>
+							<li>
+								<i class="fas fa-map-marker-alt"></i>
+								서울특별시 관악구 남부순환로 144길 35
+							</li>
+							<li>
+								<i class="fas fa-phone"></i>
+								+8210 3273 5418
+							</li>
+							<li>
+								<i class="fas fa-envelope"></i>
+								rmsehd93@naver.com
+							</li>
+						</ul>
 					</div>
 				</div>
 				<div class="col-xl-3 col-md-6 col-lg-3">
 					<div class="footer_widget">
-						<ul class="links double_links">
-							<li><a href="#">이용약관</a></li>
-							<li><a href="#">개인정보처리방침</a></li>
-							<li><a href="#">사업자정보확인</a></li>
+						<br><br><br>
+						<ul>
+							<li>
+								<a href="#">회사소개</a>
+							</li>
+							<li>
+								<a href="#">파트너</a>
+							</li>
+							<li>
+								<a href="#">환불규정</a>
+							</li>
+							<li>
+								<a href="notice_page">고객센터</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-md-6 col-lg-3">
+					<div class="footer_widget">
+						<br><br><br>
+						<ul>
+							<li>
+								<a href="#">이용약관</a>
+							</li>
+							<li>
+								<a href="#">개인정보처리방침</a>
+							</li>
+							<li>
+								<a href="#">사업자정보확인</a>
+							</li>
 						</ul>
 					</div>
 				</div>

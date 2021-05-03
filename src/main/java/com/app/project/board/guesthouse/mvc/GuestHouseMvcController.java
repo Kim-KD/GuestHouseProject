@@ -8,28 +8,32 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.app.project.user.UserService;
+import com.app.project.board.guesthouse.GuestHouseService;
 
 @Controller
 @SessionAttributes("userData")
 public class GuestHouseMvcController {
 	
 	@Autowired
-	private UserService svc;
+	private GuestHouseService svc;
 	private ModelAndView mav;
 	
 	// 게하 리스트 page
 	@GetMapping("/gh_list_page")
 	public ModelAndView gh_list_page(HttpSession session) {
 		mav = new ModelAndView();
+		int list_total = svc.gh_list_total();
+		
 		if(session.getAttribute("userData.STATUS") == "P") {
 			mav.addObject("userData", session.getAttribute("userData.STATUS"));
+			mav.addObject("total", list_total);
 			mav.setViewName("guest_house/common/gh_list");
 			return mav;
 		} else {
+			mav.addObject("total", list_total);
 			mav.setViewName("guest_house/common/gh_list");
 			return mav;
-		}		
+		}
 	}
 	
 	// 게하 상세보기 page
