@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <div id="container" class="container">
 	<div class="top_info">
@@ -51,6 +52,14 @@
 					<a class="top_info_icon_heart" style="cursor: pointer;"><i class="far fa-heart fa-2x"></i></a>
 				</span>
 				<h2 class="top_info_title">게스트하우스</h2>
+				
+				<c:if test="${userData.STATUS eq 'P'}">
+					<div class="m-b-10">
+						<a href="#" class="modify_delete_button">수정</a>
+						<a href="#" class="modify_delete_button">삭제</a>
+					</div>
+				</c:if>
+				
 				<div class="top_info_price_box">
 					<div class="top_info_price_top">
 						<div class="price_top_title">

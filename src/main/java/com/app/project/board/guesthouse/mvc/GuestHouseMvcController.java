@@ -23,17 +23,10 @@ public class GuestHouseMvcController {
 	public ModelAndView gh_list_page(HttpSession session) {
 		mav = new ModelAndView();
 		int list_total = svc.gh_list_total();
+		mav.addObject("total", list_total);
+		mav.setViewName("guest_house/common/gh_list");
 		
-		if(session.getAttribute("userData.STATUS") == "P") {
-			mav.addObject("userData", session.getAttribute("userData.STATUS"));
-			mav.addObject("total", list_total);
-			mav.setViewName("guest_house/common/gh_list");
-			return mav;
-		} else {
-			mav.addObject("total", list_total);
-			mav.setViewName("guest_house/common/gh_list");
-			return mav;
-		}
+		return mav;
 	}
 	
 	// 게하 상세보기 page

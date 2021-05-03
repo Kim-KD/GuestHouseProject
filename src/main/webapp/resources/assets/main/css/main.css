@@ -446,7 +446,7 @@
 
 .introduce2 > .border_box { 
 	position: relative; 
-	height: 172px;
+	height: 162px;
 }
 
 .border_box { border: 1px solid #edeceb; }
@@ -653,6 +653,23 @@
     color: #888;
 }
 
+.modify_delete_button {
+	display: inline-block;
+	width: 30%;
+	background-color: #ccd0d4;
+	color: #fff;
+	text-align: center;
+	padding: 13px 10px;
+	border-radius: 10px;
+	font-size: 16px;
+	font-weight: 500;
+	margin-right: 10px;
+}
+
+.modify_delete_button:hover {
+	color: #fff !important;
+	background-color: #b4b9bf;
+}
 /* 상세보기 */
 
 /* 리스트 */

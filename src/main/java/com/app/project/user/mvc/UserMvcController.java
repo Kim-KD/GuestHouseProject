@@ -115,7 +115,7 @@ public class UserMvcController {
 	public String my_info_modify(UserBean userBean, SessionStatus sessionStatus) {
 		svc.info_update(userBean);
 		sessionStatus.setComplete();
-		return "redirect:/";
+		return "redirect:login_page";
 	}
 	
 	
