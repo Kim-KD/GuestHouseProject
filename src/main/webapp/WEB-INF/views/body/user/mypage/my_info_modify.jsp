@@ -238,7 +238,7 @@
 		</table>
 		
 		<div class="text-center m-t-25 m-b-80">
-			<button class="btn bg_blu btn-lg nsdow" onclick="return form_validation();">회원정보 수정</button>
+			<button class="btn bg_blu btn-lg nsdow" onclick="return form_validation()">회원정보 수정</button>
 		</div>
 	</form>
 </div>

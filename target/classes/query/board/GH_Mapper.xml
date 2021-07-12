@@ -6,4 +6,24 @@
 	<select id="gh_list_total" resultType="int">
 		select count(*) from GH_INFO;
 	</select>
+	
+	<insert id="gh_info_insert" parameterType="gh_board" useGeneratedKeys="true" keyProperty="NO">
+		insert into GH_INFO(USER_ID, PARTNER_NAME, POST_CODE, ADDR, DETAIL_ADDR, INTRODUCE, VIEWS, LIKES, WRITE_DATE, 
+							THUMBNAIL, SLIDER_IMG, CHECK_IN, CHECK_OUT, LIGHTS_OUT_TIME)
+		values(#{USER_ID}, #{PARTNER_NAME}, #{POST_CODE}, #{ADDR}, #{DETAIL_ADDR}, #{INTRODUCE}, 0, 0, now(), 
+				#{THUMBNAIL}, #{SLIDER_IMG}, #{CHECK_IN}, #{CHECK_OUT}, #{LIGHTS_OUT_TIME})
+	</insert>
+	
+	<insert id="gh_room_info_insert" parameterType="list">
+		insert into GH_ROOM_INFO(NO, ROOMS, PRICE, ROOM_GENDER, PERSONNEL, ROOMS_IMG)
+		values
+		<foreach item="roomList" collection="list" separator=",">
+			(#{roomList.NO}, #{roomList.ROOMS}, #{roomList.PRICE}, #{roomList.ROOM_GENDER}, #{roomList.PERSONNEL}, #{roomList.ROOMS_IMG})
+		</foreach>
+	</insert>
+	
+	<insert id="gh_service_info">
+		insert into SERVICE(NO, PUBLIC_FACILITY, ETC, BATHROOM)
+		values(#{NO}, #{PUBLIC_FACILITY}, #{ETC}, #{BATHROOM})
+	</insert>
 </mapper>

@@ -474,7 +474,43 @@ table {
 .room_service_list > li:last-child { border-right: none; }
 .chk_list > li > i { color: #42c3bf; }
 
-.chk_list > li > label { margin-bottom: 0; }
+.chk_list > li > label {
+	margin-bottom: 0;
+	cursor: default;
+}
+
+.add_del {
+    float: right;
+    width: 8%;
+    background-color: #ccd0d4;
+    color: #fff !important;
+    text-align: center;
+    margin: 25px 0 0px 10px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.add_del:hover {
+    color: #fff !important;
+    background-color: #b4b9bf;
+}
+
+.text_alert {
+	display: block;
+	position: absolute;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 15px;
+	width: 392px;
+	text-align: right;
+	color: #f30c43;
+}
+
+td > #warning_introduce { width: 947px; }
+
 /* 게시글 작성 및 수정 */
 
 /* 공지사항 페이지 */
@@ -542,6 +578,4 @@ ul > .active > a {
 .d_block { display: block;}
 /* 예약 확인 페이지 */
 
-div > .top_user_id {
-	color: #ff4a52;
-}
+div > .top_user_id { color: #ff4a52; }

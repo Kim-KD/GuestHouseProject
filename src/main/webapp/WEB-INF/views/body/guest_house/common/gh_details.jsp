@@ -8,15 +8,15 @@
 				<!-- 큰 이미지 [s] -->
 				<div class="slider_bx">
 					<div style="margin: 0 auto;">
-						<div style="width: 100%; overflow: hidden; position: relative; height: 450px;">
-							<img style="width: 100%;" src="resources/assets/main/img/details-img/1.png">
+						<div style="width: 100%; overflow: hidden; position: relative; height: 500px;">
+							<img style="width: 100%; height: 100%;" src="resources/assets/main/img/details-img/1.png">
 						</div>
 					</div>
 				</div>
 				<!-- 큰 이미지 [e] -->
 					
 				<!-- 썸네일 [s] -->
-				<div class="slider_bx img_wrap_list" style="padding: 20px 0;">
+				<!-- <div class="slider_bx img_wrap_list" style="padding: 20px 0;">
 					<ul class="img_slider_control">
 						<li class="bxprev">
 							<a href="#" class="bx-prev">이전</a>
@@ -43,7 +43,7 @@
 							</ul>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<!-- 썸네일 [e	] -->
 			</div>
 			
@@ -55,7 +55,7 @@
 				
 				<c:if test="${userData.STATUS eq 'P'}">
 					<div class="m-b-10">
-						<a href="#" class="modify_delete_button">수정</a>
+						<a href="gh_modify_page" class="modify_delete_button">수정</a>
 						<a href="#" class="modify_delete_button">삭제</a>
 					</div>
 				</c:if>
