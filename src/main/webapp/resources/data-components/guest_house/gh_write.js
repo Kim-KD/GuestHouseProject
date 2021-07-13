@@ -20,7 +20,7 @@ function add_Room_info() {
 		room_info1_copy.find("#rooms1").attr("id", "rooms" + num).val("");
 		room_info1_copy.find("#price1").attr("id", "price" + num).val("");
 		room_info2_copy.find("#room_gender1").attr("id", "room_gender" + num).val("");
-		room_info2_copy.find("#personnel1").attr("id", "personnel" + num).val(" ");
+		room_info2_copy.find("#personnel1").attr("id", "personnel" + num).val("");
 
 		room_info1_copy.find("#warning_rooms1").attr("id", "warning_rooms" + num).text("");
 		room_info1_copy.find("#warning_price1").attr("id", "warning_price" + num).text("");
@@ -43,25 +43,6 @@ function add_Room_info() {
 
 // 방정보 삭제 [s]
 function del_Room_info() {
-	/*var room_info1 = document.getElementById("room_info1");
-	var room_info2 = document.getElementById("room_info2");
-	var room_info3 = document.getElementById("room_info3");
-	
-	var room_info1_parent = room_info1.parentElement.children;
-	var room_info2_parent = room_info2.parentElement.children;
-	var room_info3_parent = room_info3.parentElement.children;
-	
-	var length = $("tr[id=room_info1]").length;*/
-	
-	/*if(length == 1) {
-		alert("삭제할 수 없습니다.");
-		return;
-	} else {
-		room_info1_parent.removeChild(room_info1.lastChild);
-		room_info2_parent.removeChild(room_info2.lastChild);
-		room_info3_parent.removeChild(room_info3.lastChild);
-	}*/
-	
 	var room_info = document.getElementById("room_info");
  	var room_info_child = room_info.children;
 	var length = $("tr[id=room_info1]").length;
@@ -184,29 +165,29 @@ function btn_click(e) {
 
 //keyup, keydown 되었을때, 메세지 제거 [s]
 function keyevent(e) {
-	var r_num = e.split("rooms");
-	var p_num = e.split("price");
-	var g_num = e.split("room_gender");
-	var p_num = e.split("personnel");
+	var room_num = e.split("rooms");
+	var price_num = e.split("price");
+	var gender_num = e.split("room_gender");
+	var personnel_num = e.split("personnel");
 	
-	$("#rooms" + r_num[1]).on("keyup keydown", function() {
-		if($("#rooms" + r_num[1]).val().length > 0) {
-			$("#warning_rooms" + r_num[1]).empty();
+	$("#rooms" + room_num[1]).on("keyup keydown", function() {
+		if($("#rooms" + room_num[1]).val().length > 0) {
+			$("#warning_rooms" + room_num[1]).empty();
 		}
 	});
-	$("#price" + p_num[1]).on("keyup keydown", function() {
-		if($("#price" + p_num[1]).val().length > 0) {
-			$("#warning_price" + p_num[1]).empty();
+	$("#price" + price_num[1]).on("keyup keydown", function() {
+		if($("#price" + price_num[1]).val().length > 0) {
+			$("#warning_price" + price_num[1]).empty();
 		}
 	});
-	$("#room_gender" + g_num[1]).on("keyup keydown", function() {
-		if($("#room_gender" + g_num[1]).val().length > 0) {
-			$("#warning_room_gender" + g_num[1]).empty();
+	$("#room_gender" + gender_num[1]).on("keyup keydown", function() {
+		if($("#room_gender" + gender_num[1]).val().length > 0) {
+			$("#warning_room_gender" + gender_num[1]).empty();
 		}
 	});
-	$("#personnel" + p_num[1]).on("keyup keydown", function() {
-		if($("#personnel" + p_num[1]).val().length > 0) {
-			$("#warning_personnel" + p_num[1]).empty();
+	$("#personnel" + personnel_num[1]).on("keyup keydown", function() {
+		if($("#personnel" + personnel_num[1]).val().length > 0) {
+			$("#warning_personnel" + personnel_num[1]).empty();
 		}
 	});
 }
